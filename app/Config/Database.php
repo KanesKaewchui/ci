@@ -19,16 +19,16 @@ class Database extends Config
      * Lets you choose which connection group to
      * use if no other is specified.
      */
-    public string $defaultGroup = 'user_info';
+    public string $defaultGroup = 'db_user';
 
     /**
      * The default database connection.
      */
-    public array $user_info = [
+    public array $db_user = [
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'Test',
-        'password'     => '12345',
+        'password'     => 'D5CEVO',
         'database'     => 'db_user',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',

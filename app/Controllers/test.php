@@ -3,10 +3,11 @@
 namespace App\Controllers;
 
 use App\Models\Mydev_model;
-use mysqli;
+use CodeIgniter\Controller;
 
-class Test extends BaseController
+class test extends Controller
 {
+
     public function __construct()
     {
         $this->config = new \Config\App();
@@ -25,125 +26,88 @@ class Test extends BaseController
         if ($this->request->getMethod() == 'post') {
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
-
-            $md5Password = md5($password);
-
+            $hashedPassword = md5($password);
             $userid = rand(10000, 99999);
 
-            $conn = new mysqli('localhost', 'root', '', 'db_user');
-
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
-
             $sql = "INSERT INTO register (username, password, userid, create_time) VALUES (?, ?, ?, NOW())";
-            $stmt = $conn->prepare($sql);
-            $stmt->bind_param("sss", $username, $md5Password, $userid);
+            $query = $this->mydev_model->select($sql);
 
-            if ($stmt->execute()) {
-                echo "Registration successful!<br>";
+            if ($query) {
+                echo "Registration successful<br>";
                 echo "Username: " . htmlspecialchars($username) . "<br>";
-                echo "Password: " . htmlspecialchars($md5Password) . "<br>"; // Show MD5 password
+                echo "Password: " . htmlspecialchars($hashedPassword) . "<br>";
                 echo "User ID: " . htmlspecialchars($userid) . "<br>";
                 echo "Created Time: now";
             } else {
-                echo "Error: " . $stmt->error;
+                echo "Error: " . $this->mydev_model->db_group_name->error();
             }
-
-            $stmt->close();
-            $conn->close();
         } else {
-            return redirect()->to('test');
+            return view('myviews1');
         }
     }
 
     public function login()
     {
-        if ($this->session->get('userid')) {
-            $userid = $this->session->get('userid');
-
-            $conn = new mysqli('localhost', 'root', '', 'db_user');
-
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
-
-            $sql = "SELECT cash FROM user_detail WHERE userid = ?";
-            $stmt = $conn->prepare($sql);
-
-            $stmt->bind_param("i", $userid);
-
-            $stmt->execute();
-            $result = $stmt->get_result();
-
-            if ($result->num_rows > 0) {
-                $user_detail = $result->fetch_assoc();
-                echo "You are already logged in.<br>";
-                echo "ID: " . htmlspecialchars($userid) . "<br>";
-                echo "Cash: " . htmlspecialchars($user_detail['cash']) . "<br>";
-
-                // Fetch gamename and rate_cal if available
-                if ($this->session->get('gamename')) {
-                    $gamename = $this->session->get('gamename');
-
-                    $sql = "SELECT gamename, rate_cal FROM gameinfo WHERE gamename = ?";
-                    $stmt = $conn->prepare($sql);
-                    $stmt->bind_param("s", $gamename);
-                    $stmt->execute();
-                    $result = $stmt->get_result();
-
-                    if ($result->num_rows > 0) {
-                        $gameinfo = $result->fetch_assoc();
-                        echo "Game: " . htmlspecialchars($gameinfo['gamename']) . "<br>";
-                        echo "Rate: " . htmlspecialchars($gameinfo['rate_cal']) . "<br>";
-                    }
-                }
-            } else {
-                echo "No cash information found.<br>";
-            }
-
-            $stmt->close();
-            $conn->close();
-
-            return;
-        }
-
         if ($this->request->getMethod() == 'post') {
             $username = $this->request->getPost('username');
-            $password = md5($this->request->getPost('password'));
+            $password = $this->request->getPost('password');
+            $hashedPassword = md5($password);
 
-            $conn = new mysqli('localhost', 'root', '', 'db_user');
+            $sql = "SELECT * FROM register WHERE username = '$username' AND password = '$hashedPassword'";
+            $query = $this->mydev_model->select($sql);
 
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
+
+
+            if (count($query) < 0) {
+                echo "Login failed: Invalid username or password";
+                exit;
             }
 
-            $sql = "SELECT * FROM register WHERE username = ? AND password = ?";
-            $stmt = $conn->prepare($sql);
-            $stmt->bind_param("ss", $username, $password);
-            $stmt->execute();
-            $result = $stmt->get_result();
+            $sqlcash = "SELECT cash FROM user_detail WHERE userid = ";
+            $data = array($query[0]->userid);
+            $querycash = $this->mydev_model->select_binding($sqlcash, $data);
 
-            if ($result->num_rows > 0) {
-                $user = $result->fetch_assoc();
-
-                $this->session->set('userid', $user['userid']);
-                $this->session->set('username', $user['username']);
-
-
-                echo "Login successful! Welcome, " . htmlspecialchars($user['username']) . "!";
-            } else {
-                echo "Invalid username or password.";
+            if (count($querycash) < 0) {
+                echo "cash failed";
+                exit;
             }
 
-            $stmt->close();
-            $conn->close();
+            $sqlusergame = "SELECT gameid,cash FROM usergame WHERE userid = ?";
+            $queryusergame =  $this->mydev_model->select_binding($sqlusergame, $data);
+
+            if (count($queryusergame) < 0) {
+                echo "game failed";
+                exit;
+            }
+
+            // $sqlgameinfo = "SELECT gamename FROM gameinfo WHERE gameid = ";
+            // $queryugameinfo =  $this->mydev_model->select_binding($sqlgameinfo, $data);
+
+            // if (count($queryugameinfo) < 0) {
+            //     echo "gameinfo failed";
+            //     exit;
+            // }
+            // print_r($queryugameinfo);
+
+
+
+
+
+
+
+            $this->session->set('userid', $query[0]->userid);
+            echo "Login successful";
+            echo "  User ID: " . $query[0]->userid;
+            echo "  cash: " . $querycash[0]->cash;
+            echo "  Game: " . $queryusergame[0]->gameid;
+            // echo "  GameName: " . $queryugameinfo[0]->gamename;
         } else {
-            return redirect()->to('test');
+            return view('myviews1');
         }
     }
 
-    function logout()
+
+    public function logout()
     {
         $this->session->destroy();
         return redirect()->to('test');

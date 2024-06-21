@@ -7,8 +7,6 @@ use CodeIgniter\Model;
 class Mydev_model extends Model
 {
 
-
-
     private $last_id;
 
     public  $db_group_name;
@@ -16,7 +14,7 @@ class Mydev_model extends Model
 
     function __construct()
     {
-        $this->db_group_name = \Config\Database::connect('user_info');
+        $this->db_group_name = \Config\Database::connect('db_user');
         parent::__construct();
     }
     function execute($strSQL)
@@ -47,6 +45,4 @@ class Mydev_model extends Model
     {
         $this->db_group_name->close();
     }
-    
-    
 }
