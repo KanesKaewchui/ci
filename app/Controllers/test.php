@@ -3,13 +3,17 @@
 namespace App\Controllers;
 
 use App\Models\Mydev_model;
+use App\Libraries\aescrypt;
+
 use CodeIgniter\Controller;
 
 class test extends Controller
 {
 
+
     public function __construct()
     {
+        $this->aes = new aescrypt();
         $this->config = new \Config\App();
         $this->mydev_model = new Mydev_model();
         $this->session = \Config\Services::session();
@@ -24,27 +28,37 @@ class test extends Controller
             $data['userid'] = $getuserid;
 
 
+            $iskey = $this->aes->Encrypt(json_encode($getuserid), 1234);
+            print_r($iskey);
+            $distkey = $this->aes->Decrypt(json_encode($iskey), 1234);
+            print_r($distkey);
+
             //show cash
             $sql = "SELECT cash FROM user_detail WHERE userid = '$getuserid'";
             $querycash = $this->mydev_model->select($sql);
             $data['cash'] = $querycash[0]->cash;
 
             //show game
+            $games = [];
             $sql = "SELECT gamename, cash, rate_cal, (cash * rate_cal) AS total
-                    FROM gameinfo 
-                    JOIN usergame ON gameinfo.gameid = usergame.gameid
-                    GROUP BY gameinfo.gameid";
+                FROM gameinfo 
+                JOIN usergame ON gameinfo.gameid = usergame.gameid
+                WHERE usergame.userid = '$getuserid'
+                GROUP BY gameinfo.gameid";
             $querygame = $this->mydev_model->select($sql);
-            foreach ($querygame as $game){
-                $game->gamename,
-                $game->cash,
-                $game->total
+            if ($querygame) {
+                $games = [];
+                foreach ($querygame as $game) {
+                    $games[] = [
+                        'gamename' => $game->gamename,
+                        'cash' => $game->cash,
+                        'total' => $game->total
+                    ];
+                }
+                $data['games'] = $games;
+            } else {
+                $data['games'] = [];
             }
-            $data['gamename'] = $querygame[0]->gamename;
-            $data['cash'] = $querygame[0]->cash;
-            $data['total'] = $querygame[0]->total;
-        } else {
-            echo "0";
         }
 
 
@@ -79,6 +93,7 @@ class test extends Controller
 
     public function login()
     {
+
         $data = [];
         if ($this->request->getMethod() == 'post') {
             $username = $this->request->getPost('username');

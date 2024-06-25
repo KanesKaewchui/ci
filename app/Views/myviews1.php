@@ -16,7 +16,14 @@
         echo "<br>";
         echo "Cash : " . ($cash);
         echo "<br>";
-        echo "Game : " . ($gamename);
+        if (!empty($games)) {
+            foreach ($games as $game) {
+                echo "Game: " . $game['gamename'] . "<br>";
+                echo "Cash: " . $game['cash'] . "<br>";
+                echo "Total: " . $game['total'] . "<br><br>";
+            }
+        }
+
         ?>
         <!--Add rewards-->
 
