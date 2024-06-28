@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\Mydev_model;
+use App\Models\Movie_model;
 use App\Libraries\aescrypt;
 use CodeIgniter\Controller;
 
@@ -13,9 +13,9 @@ class Movie_test extends Controller
     {
         $this->aes = new aescrypt();
         $this->config = new \Config\App();
-        $this->mydev_model = new Mydev_model();
-        $this->session = \Config\Services::session();
-        $this->session->start();
+        $this->movie_model = new Movie_model();
+        // $this->session = \Config\Services::session();
+        // $this->session->start();
     }
 
     public function index()
@@ -27,24 +27,22 @@ class Movie_test extends Controller
     {
 
         if ($this->request->getMethod() == 'post') {
-            $user_name = $this->request->getPost('username');
+            $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
-            $name = $this->request->getPost('name');
-            $lastname = $this->request->getPost('lastname');
-            $email = $this->request->getPost('email');
+            $user_id = rand(10000, 99999);
 
-            $sql = "INSERT INTO user (user_id, user_name, password, name, lastname, email, status, create_time)
-                    VALUES ('$user_id', '$user_name', '$password', '$name', '$lastname', '$email', 1, NOW())";
-            $query = $this->mydev_model->execute($sql);
+            $sql = "INSERT INTO user_movie (user_id,username, password, status, create_time)
+                    VALUES ('$user_id','$username', '$password', 1, NOW())";
+            $query = $this->movie_model->execute($sql);
 
             if ($query) {
                 echo "Registration successful<br>";
-                echo "Username: " . $user_name . "<br>";
-                echo "Name-LastName: " . $name . " " . $lastname . "<br>";
-                echo "Email: " . $email . "<br>";
+                echo "User ID: " . $user_id . "<br>";
+                echo "Username: " . $username . "<br>";
+                echo "Password: " . $password . "<br>";
                 echo "Created Time: " . date('Y-m-d H:i:s');
             } else {
-                "Error: " . $this->mydev_model->db_group_name->error();
+                "Error: " . $this->movie_model->db_group_name->error();
             }
         } else {
             return view('viewsmovie');
@@ -57,7 +55,7 @@ class Movie_test extends Controller
     //         $username = $this->request->getPost('username');
     //         $password = $this->request->getPost('password');
 
-    //         $sql = "SELECT * FROM user WHERE user_name = '$username' AND password  = '$password'";
+    //         $sql = "SELECT * FROM user WHERE username = '$username' AND password  = '$password'";
     //         $query = $this->mydev_model->select($sql);
 
     //         if (isset($query)) {

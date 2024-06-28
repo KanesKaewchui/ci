@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="Movie_test" method="POST">
+    <form action="Movie_test/register" method="POST">
         <style>
             table,
             th,
@@ -27,6 +27,7 @@
             }
         </style>
         <!-- Registration -->
+        <h2>Register</h2>
         <table style="width:350px; margin:0 auto">
             <tr>
                 <th>Label</th>
@@ -41,27 +42,16 @@
                 <td><input type="password" name="password" id="password" required></td>
             </tr>
             <tr>
-                <td style="text-align:right">name:</td>
-                <td><input type="text" name="name" id="name" required></td>
-            </tr>
-            <tr>
-                <td style="text-align:right">lastname:</td>
-                <td><input type="text" name="lastname" id="lastname" required></td>
-            </tr>
-            <tr>
-                <td style="text-align:right">email:</td>
-                <td><input type="email" name="email" id="email" required></td>
-            </tr>
-            <tr>
                 <td></td>
                 <td><input type="submit" name="submit" id="submit"></td>
             </tr>
         </table>
 
         <br>
-
-        <!-- login -->
-        <!-- <table style="width:350px; margin:0 auto">
+    </form>
+    <form action="">
+        <h2>Login</h2>
+        <table style="width:350px; margin:0 auto">
             <tr>
                 <th>Label</th>
                 <th>data</th>
@@ -77,7 +67,7 @@
             <td></td>
             <td><input type="submit" name="submit" id="submit"></td>
             </tr>
-        </table> -->
+        </table>
     </form>
     <div id="error"></div>
 </body>
