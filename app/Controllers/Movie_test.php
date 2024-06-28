@@ -25,6 +25,7 @@ class Movie_test extends Controller
 
     public function register()
     {
+
         if ($this->request->getMethod() == 'post') {
             $user_name = $this->request->getPost('username');
             $password = $this->request->getPost('password');
@@ -32,27 +33,18 @@ class Movie_test extends Controller
             $lastname = $this->request->getPost('lastname');
             $email = $this->request->getPost('email');
 
-            $data = [
-                'user_name' => $user_name,
-                'password' => $password,
-                'name' => $name,
-                'lastname' => $lastname,
-                'email' => $email,
-                'status' => 1,
-                'create_time' => date('Y-m-d H:i:s')
-            ];
-
-            $query = $this->mydev_model->insert($data);
+            $sql = "INSERT INTO user (user_id, user_name, password, name, lastname, email, status, create_time)
+                    VALUES ('$user_id', '$user_name', '$password', '$name', '$lastname', '$email', 1, NOW())";
+            $query = $this->mydev_model->execute($sql);
 
             if ($query) {
                 echo "Registration successful<br>";
                 echo "Username: " . $user_name . "<br>";
-                echo "Password: " . $password . "<br>";
                 echo "Name-LastName: " . $name . " " . $lastname . "<br>";
                 echo "Email: " . $email . "<br>";
-                echo "Created Time: " . $data['create_time'];
+                echo "Created Time: " . date('Y-m-d H:i:s');
             } else {
-                echo "Error: " . $this->mydev_model->db_group_name->error();
+                "Error: " . $this->mydev_model->db_group_name->error();
             }
         } else {
             return view('viewsmovie');

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form id="myForm" action="Movie_test" method="POST">
+    <form action="Movie_test" method="POST">
         <style>
             table,
             th,
