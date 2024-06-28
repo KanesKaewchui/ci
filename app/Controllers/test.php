@@ -22,6 +22,8 @@ class test extends Controller
 
     public function index()
     {
+        echo "test";
+        exit;
         $data = [];
         if ($this->session->get('userid')) {
             $getuserid = $this->session->get('userid');
