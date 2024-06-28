@@ -1,0 +1,434 @@
+INFO - 2024-06-26 02:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:36:33 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:37:33 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:40:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 02:40:04 --> ErrorException: Undefined variable $log
+in APPPATH\Views\nodeviews.php on line 2.
+ 1 APPPATH\Views\nodeviews.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $log', 'C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews', [], true)
+ 5 APPPATH\Controllers\Res.php(31): view('nodeviews', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 02:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:41:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:41:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:44:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:45:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:45:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:46:22 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:46:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:47:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 02:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:53:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 02:53:08 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\nodeviews.php on line 49.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews', [], true)
+ 3 APPPATH\Controllers\Res.php(32): view('nodeviews', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 02:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 02:53:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 03:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 03:01:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 03:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 03:56:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 03:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 03:56:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 03:56:19 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Views\nodeviews.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews', [], true)
+ 4 APPPATH\Controllers\Res.php(43): view('nodeviews', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 03:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 03:56:36 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 03:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 03:56:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 03:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 03:57:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:00:12 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:02:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:02:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:02:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:03:18 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:03:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:04:53 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:05:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:05:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:06:18 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:06:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:06:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:07:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:07:44 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Views\nodeviews.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews', [], true)
+ 4 APPPATH\Controllers\Res.php(43): view('nodeviews', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:08:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:08:29 --> Error: Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Res.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:08:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:12:03 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:12:03 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Views\nodeviews.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews', [], true)
+ 4 APPPATH\Controllers\Res.php(45): view('nodeviews', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:14:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:14:24 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Views\nodeviews.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews', [], true)
+ 4 APPPATH\Controllers\Res.php(45): view('nodeviews', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:17:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:18:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:19:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:21:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:21:23 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Views\nodeviews1.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 4 APPPATH\Controllers\Res.php(44): view('nodeviews1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:21:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:23:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:23:55 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Views\nodeviews1.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 4 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:30:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:30:02 --> ErrorException: Attempt to read property "id" on array
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 APPPATH\Views\nodeviews1.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 5 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:30:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:30:58 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 4 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 04:30:58 --> [Caused by] ErrorException: Undefined variable $i
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 APPPATH\Views\nodeviews1.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 5 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:31:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:31:15 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 4 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 04:31:15 --> [Caused by] ErrorException: Undefined variable $i
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 APPPATH\Views\nodeviews1.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 5 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:31:21 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:31:21 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 4 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 04:31:21 --> [Caused by] ErrorException: Undefined variable $i
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 APPPATH\Views\nodeviews1.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 5 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:31:26 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:31:26 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 4 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 04:31:26 --> [Caused by] ErrorException: Undefined variable $i
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 APPPATH\Views\nodeviews1.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 5 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:31:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:31:32 --> ErrorException: Attempt to read property "id" on array
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 APPPATH\Views\nodeviews1.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 5 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:32:13 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:32:13 --> ErrorException: Attempt to read property "id" on array
+in APPPATH\Views\nodeviews1.php on line 27.
+ 1 APPPATH\Views\nodeviews1.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\nodeviews1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nodeviews1', [], true)
+ 5 APPPATH\Controllers\Res.php(43): view('nodeviews1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Res->postdata()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Res))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:32:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:32:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:32:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:37:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:37:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:37:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:41:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:41:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 04:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:48:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 04:48:46 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Service.php on line 27.
+ 1 APPPATH\Controllers\Service.php(27): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service->getuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 04:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 04:49:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 05:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 05:02:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 05:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 05:02:12 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 05:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 05:02:12 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 05:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 05:02:13 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 05:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 05:02:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 05:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 05:30:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 08:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-26 08:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 08:09:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+WARNING - 2024-06-26 08:09:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 08:11:21 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Service.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service->nodeuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 08:11:41 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Service.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service->nodeuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 08:11:44 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Service.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service->nodeuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 08:11:44 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Service.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service->nodeuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 08:12:30 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Service.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service->nodeuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 08:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 08:29:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 08:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 08:31:21 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 08:31:21 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Service.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service->nodeuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-26 08:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 08:31:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 08:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 08:32:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 08:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 08:32:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 08:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 08:33:20 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-06-26 08:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-26 08:33:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-06-26 08:47:33 --> ParseError: syntax error, unexpected variable "$reqheaders"
+in APPPATH\Controllers\Service.php on line 71.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Service/nodeuser', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Service/nodeuser')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Service/nodeuser')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 08:47:48 --> ParseError: syntax error, unexpected variable "$reqheaders"
+in APPPATH\Controllers\Service.php on line 71.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Service/nodeuser', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Service/nodeuser')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Service/nodeuser')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 08:49:19 --> ParseError: syntax error, unexpected variable "$reqheaders"
+in APPPATH\Controllers\Service.php on line 71.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Service/nodeuser', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Service/nodeuser')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Service/nodeuser')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 08:51:37 --> ParseError: syntax error, unexpected variable "$reqheaders"
+in APPPATH\Controllers\Service.php on line 71.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Service/nodeuser', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Service/nodeuser')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Service/nodeuser')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-26 08:51:57 --> ParseError: syntax error, unexpected variable "$reqheaders"
+in APPPATH\Controllers\Service.php on line 71.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Service/nodeuser', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Service/nodeuser')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Service/nodeuser')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
