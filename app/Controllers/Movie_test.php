@@ -65,6 +65,14 @@ class Movie_test extends Controller
                 echo "Login successful" . "<br>";
                 echo "Username: " . $username . "<br>";
                 echo "password: " . $password . "<br>";
+
+                $movies = $this->get_movie();
+                echo "<h2>Movie List</h2>";
+                echo "<ul>";
+                foreach ($movies as $movie) {
+                    echo "<li>" . $movie . "</li>";
+                }
+                echo "</ul>";
             }
         } else {
             return view('viewsmovie');
@@ -73,7 +81,10 @@ class Movie_test extends Controller
 
     public function get_movie()
     {
-        $sql = "SELECT title FROM movie_detail"
+        $sql = "SELECT round_id,movie_name,genre,movie_duration,movie_start_show_time,price 
+        FROM movie_detail";
+        $query = $this->movie_model->execute($sql);
+        return $query;
     }
 
 
