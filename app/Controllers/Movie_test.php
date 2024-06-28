@@ -49,18 +49,41 @@ class Movie_test extends Controller
         }
     }
 
-    // public function login()
-    // {
-    //     if ($this->request->getMethod() == 'post') {
-    //         $username = $this->request->getPost('username');
-    //         $password = $this->request->getPost('password');
+    public function login()
+    {
+        if ($this->request->getMethod() == 'post') {
+            $username = $this->request->getPost('username');
+            $password = $this->request->getPost('password');
 
-    //         $sql = "SELECT * FROM user WHERE username = '$username' AND password  = '$password'";
-    //         $query = $this->mydev_model->select($sql);
+            $sql = "SELECT * FROM user_movie WHERE username = '$username' AND password = '$password'";
+            $query = $this->movie_model->execute($sql);
 
-    //         if (isset($query)) {
-    //             echo "Login successful" . "<br>";
-    //         }
-    //     }
-    // }
+            if ($query->getNumRows() > 0) {
+                echo "Login successful" . "<br>";
+                echo "Username: " . $username . "<br>";
+                echo "password: " . $password . "<br>";
+            }
+        } else {
+            return view('viewsmovie');
+        }
+    }
+
+    public function booking()
+    {
+        if ($this->request->getMethod() == 'post') {
+            $username = $this->request->getPost('username');
+            $password = $this->request->getPost('password');
+
+            $sql = "SELECT * FROM user_movie WHERE username = '$username' AND password = '$password'";
+            $query = $this->movie_model->execute($sql);
+
+            if ($query->getNumRows() > 0) {
+                echo "Login successful" . "<br>";
+                echo "Username: " . $username . "<br>";
+                echo "password: " . $password . "<br>";
+            }
+        } else {
+            return view('viewsmovie');
+        }
+    }
 }

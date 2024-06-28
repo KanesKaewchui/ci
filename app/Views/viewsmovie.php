@@ -49,7 +49,7 @@
 
         <br>
     </form>
-    <form action="">
+    <form action="Movie_test/login" method="POST">
         <h2>Login</h2>
         <table style="width:350px; margin:0 auto">
             <tr>

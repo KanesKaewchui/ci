@@ -436,3 +436,24 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
  7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 07:30:49 --> ErrorException: Undefined property: App\Controllers\Movie_test::$mydev_model
+in APPPATH\Controllers\Movie_test.php on line 59.
+ 1 APPPATH\Controllers\Movie_test.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Movie_test::$mydev_model', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Movie_test.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 07:31:12 --> ErrorException: Undefined property: App\Controllers\Movie_test::$mydev_model
+in APPPATH\Controllers\Movie_test.php on line 59.
+ 1 APPPATH\Controllers\Movie_test.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Movie_test::$mydev_model', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Movie_test.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 07:31:15 --> ErrorException: Undefined property: App\Controllers\Movie_test::$mydev_model
+in APPPATH\Controllers\Movie_test.php on line 59.
+ 1 APPPATH\Controllers\Movie_test.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Movie_test::$mydev_model', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Movie_test.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
