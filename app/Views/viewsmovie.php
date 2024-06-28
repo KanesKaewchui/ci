@@ -42,6 +42,10 @@
                 <td><input type="password" name="password" id="password" required></td>
             </tr>
             <tr>
+                <td style="text-align:right">Birthday:</td>
+                <td><input type="date" name="birthday" id="birthday" required></td>
+            </tr>
+            <tr>
                 <td></td>
                 <td><input type="submit" name="submit" id="submit"></td>
             </tr>
