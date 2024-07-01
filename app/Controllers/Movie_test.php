@@ -20,8 +20,33 @@ class Movie_test extends Controller
 
     public function index()
     {
-        return view('viewsmovie');
+        $data['movies'] = $this->get_movie();
+        return view('viewsmovie', $data);
     }
+
+    public function get_movie()
+    {
+        $sql = "SELECT round_id, movie_name, genre, movie_duration, movie_start_show_time, price FROM movie_detail";
+        $query = $this->movie_model->select($sql);
+
+        if (count($query) > 0) {
+            return $query;
+        } else {
+            return [];
+        }
+    }
+
+    public function login_form()
+    {
+        return view('login_form');
+    }
+
+    public function register_form()
+    {
+        return view('register_form');
+    }
+
+
 
     public function register()
     {
@@ -65,25 +90,11 @@ class Movie_test extends Controller
                 echo "Login successful" . "<br>";
                 echo "Username: " . $username . "<br>";
                 echo "password: " . $password . "<br>";
+
+                echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
             }
         } else {
             return view('viewsmovie');
-        }
-    }
-
-    public function get_movie()
-    {
-        $sql = "SELECT round_id,movie_name,genre,movie_duration,movie_start_show_time,price 
-        FROM movie_detail";
-        $query = $this->movie_model->execute($sql);
-
-        if ($query->num_rows() > 0) {
-            echo "<h2>Movie List</h2>";
-            echo "<ul>";
-            foreach ($query->result() as $row) {
-                echo "<li>" . $row->movie_name . "</li>";
-            }
-            echo "</ul>";
         }
     }
 
