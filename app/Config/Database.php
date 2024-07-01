@@ -48,8 +48,8 @@ class Database extends Config
     public array $movie_test = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'Test',
-        'password'     => 'D5CEVO',
+        'username'     => 'root',
+        'password'     => '',
         'database'     => 'movie_test',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
