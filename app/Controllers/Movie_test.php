@@ -14,8 +14,8 @@ class Movie_test extends Controller
         $this->aes = new aescrypt();
         $this->config = new \Config\App();
         $this->movie_model = new Movie_model();
-        // $this->session = \Config\Services::session();
-        // $this->session->start();
+        $this->session = \Config\Services::session();
+        $this->session->start();
     }
 
     public function index()
@@ -36,17 +36,11 @@ class Movie_test extends Controller
         }
     }
 
-    public function login_form()
-    {
-        return view('login_form');
-    }
 
     public function register_form()
     {
         return view('register_form');
     }
-
-
 
     public function register()
     {
@@ -77,6 +71,11 @@ class Movie_test extends Controller
         }
     }
 
+    public function login_form()
+    {
+        return view('login_form');
+    }
+
     public function login()
     {
         if ($this->request->getMethod() == 'post') {
@@ -98,23 +97,29 @@ class Movie_test extends Controller
         }
     }
 
-
     // public function booking()
     // {
     //     if ($this->request->getMethod() == 'post') {
-    //         $username = $this->request->getPost('username');
-    //         $password = $this->request->getPost('password');
+    //         $movie_id = $this->request->getPost('movie_id');
+    //         $round_id = $this->request->getPost('round_id');
+    //         $seat_count = $this->request->getPost('seat_count');
+    //         $user_id = $this->session->get('user_id');
 
-    //         $sql = "SELECT * FROM user_movie WHERE username = '$username' AND password = '$password'";
+    //         $sql = "SELECT * FROM booking WHERE round_id = '$round_id' AND ";
     //         $query = $this->movie_model->execute($sql);
 
     //         if ($query->getNumRows() > 0) {
-    //             echo "Login successful" . "<br>";
-    //             echo "Username: " . $username . "<br>";
-    //             echo "password: " . $password . "<br>";
+    //             $sql_update = "UPDATE  SET ";
+    //             $this->movie_model->execute($sql_update);
+
+    //             $sql_insert = ""
+    //             $query_insert = $this->movie_model->execute($sql_insert);
+
+    //             if ($query_insert){
+    //                 echo "Booking successful!";
+    //                 echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
+    //             }
     //         }
-    //     } else {
-    //         return view('viewsmovie');
     //     }
     // }
 }

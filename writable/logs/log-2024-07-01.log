@@ -328,3 +328,96 @@ in SYSTEMPATH\Database\BaseConnection.php on line 884.
  6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
  7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 04:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 04:39:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 04:46:25 --> ParseError: syntax error, unexpected variable "$query_insert"
+in APPPATH\Controllers\Movie_test.php on line 116.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 04:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 04:46:53 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 05:52:23 --> ParseError: syntax error, unexpected variable "$query_insert"
+in APPPATH\Controllers\Movie_test.php on line 116.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test/login_form', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test/login_form')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test/login_form')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 05:52:32 --> ParseError: syntax error, unexpected variable "$query_insert"
+in APPPATH\Controllers\Movie_test.php on line 116.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 05:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 05:52:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 05:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 05:52:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 05:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 05:52:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 05:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 05:52:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 05:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 05:56:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 05:56:17 --> ErrorException: Undefined variable $isLoggedIn
+in APPPATH\Views\viewsmovie.php on line 64.
+ 1 APPPATH\Views\viewsmovie.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isLoggedIn', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 06:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 06:05:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 06:05:42 --> ErrorException: Undefined variable $isLoggedIn
+in APPPATH\Views\viewsmovie.php on line 64.
+ 1 APPPATH\Views\viewsmovie.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isLoggedIn', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 06:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 06:05:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 06:05:43 --> ErrorException: Undefined variable $isLoggedIn
+in APPPATH\Views\viewsmovie.php on line 64.
+ 1 APPPATH\Views\viewsmovie.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isLoggedIn', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 06:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 06:05:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 06:05:57 --> ParseError: syntax error, unexpected variable "$query_insert"
+in APPPATH\Controllers\Movie_test.php on line 116.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 06:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 06:06:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 06:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 06:06:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 06:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 06:31:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 07:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 07:35:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
