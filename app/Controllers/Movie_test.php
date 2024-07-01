@@ -82,44 +82,47 @@ class Movie_test extends Controller
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
 
+
             $sql = "SELECT * FROM user_movie WHERE username = '$username' AND password = '$password'";
-            $query = $this->movie_model->execute($sql);
+            $query = $this->movie_model->select($sql);
+            $user_id = $query[0]->user_id;
+            $this->session->set("user_id", $user_id);
 
-            if ($query->getNumRows() > 0) {
-                echo "Login successful" . "<br>";
-                echo "Username: " . $username . "<br>";
-                echo "password: " . $password . "<br>";
 
-                echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
+            if (count($query) > 0) {
+
+                $data['user_data'] = $query;
+                return view('login_process', $data);
             }
         } else {
             return view('viewsmovie');
         }
     }
 
-    // public function booking()
-    // {
-    //     if ($this->request->getMethod() == 'post') {
-    //         $movie_id = $this->request->getPost('movie_id');
-    //         $round_id = $this->request->getPost('round_id');
-    //         $seat_count = $this->request->getPost('seat_count');
-    //         $user_id = $this->session->get('user_id');
 
-    //         $sql = "SELECT * FROM booking WHERE round_id = '$round_id' AND ";
-    //         $query = $this->movie_model->execute($sql);
+    public function booking()
+    {
+        $user_id = $this->session->get("user_id");
+        if ($this->request->getMethod() == 'post') {
+            $movie_id = $this->request->getPost('movie_id');
+            $round_id = $this->request->getPost('round_id');
+            $seat_count = $this->request->getPost('seat_count');
+            $user_id = $this->session->get('user_id');
 
-    //         if ($query->getNumRows() > 0) {
-    //             $sql_update = "UPDATE  SET ";
-    //             $this->movie_model->execute($sql_update);
+            $sql = "SELECT * FROM booking WHERE round_id = '$round_id'";
+            $query = $this->movie_model->execute($sql);
 
-    //             $sql_insert = ""
-    //             $query_insert = $this->movie_model->execute($sql_insert);
+            if ($query->getNumRows() > 0) {
 
-    //             if ($query_insert){
-    //                 echo "Booking successful!";
-    //                 echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
-    //             }
-    //         }
-    //     }
-    // }
+
+                $sql_insert = ""
+                $query_insert = $this->movie_model->execute($sql_insert);
+
+                if ($query_insert){
+                    echo "Booking successful!";
+                    echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
+                }
+            }
+        }
+    }
 }

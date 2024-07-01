@@ -421,3 +421,47 @@ INFO - 2024-07-01 06:31:31 --> Session: Class initialized using 'CodeIgniter\Ses
 WARNING - 2024-07-01 06:31:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
 INFO - 2024-07-01 07:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-01 07:35:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 10:06:59 --> ParseError: syntax error, unexpected token "if"
+in APPPATH\Controllers\Movie_test.php on line 108.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 10:12:00 --> Error: Call to a member function getNumRows() on array
+in APPPATH\Controllers\Movie_test.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->login()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 10:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 10:12:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 10:12:27 --> Error: Call to a member function getNumRows() on array
+in APPPATH\Controllers\Movie_test.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->login()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 10:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 10:13:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 10:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 10:13:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 10:18:33 --> ParseError: syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Movie_test.php on line 100.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-01 10:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 10:20:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 10:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 10:20:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 10:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 10:20:16 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 10:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 10:21:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 10:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 10:21:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
