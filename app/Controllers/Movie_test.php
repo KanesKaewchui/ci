@@ -102,7 +102,9 @@ class Movie_test extends Controller
 
     public function booking()
     {
-        $user_id = $this->session->get("user_id");
+       if (isset($_POST["user_id"])&&) {
+        # code...
+       }
         if ($this->request->getMethod() == 'post') {
             $movie_id = $this->request->getPost('movie_id');
             $round_id = $this->request->getPost('round_id');
