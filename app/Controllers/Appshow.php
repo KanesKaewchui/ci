@@ -23,6 +23,8 @@ class Appshow extends Controller
 
     public function index()
     {
+
+
         $url = 'https://takeme.la/tikky_training/tikky_api';
         $response = $this->curl->get($url)->result();
 
