@@ -571,3 +571,5 @@ in APPPATH\Controllers\Appshow.php on line 37.
  3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
  4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 09:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 09:06:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
