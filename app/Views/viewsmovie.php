@@ -48,7 +48,6 @@
         </div>
     </nav>
 
-
     <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
         <h2 class="text-2xl font-bold mb-4 text-center">Movie List</h2>
         <ul class="space-y-4">
@@ -67,6 +66,7 @@
             <?php endif; ?>
         </ul>
     </div>
+
     <div id="error" class="text-center text-red-500 mt-4"></div>
 </body>
 

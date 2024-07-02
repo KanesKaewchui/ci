@@ -56,13 +56,14 @@ class Movie_test extends Controller
             $query = $this->movie_model->execute($sql);
 
             if ($query) {
-                echo "Registration successful<br>";
-                echo "User ID: " . $user_id . "<br>";
-                echo "Username: " . $username . "<br>";
-                echo "Password: " . $password . "<br>";
-                echo "Birthday: " . $birthday . "<br>";
-                echo "Created Time: " . date('Y-m-d H:i:s');
-                echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
+                $data = [
+                    'user_id' => $user_id,
+                    'username' => $username,
+                    'password' => $password,
+                    'birthday' => $birthday,
+                    'created_time' => date('Y-m-d H:i:s')
+                ];
+                return view('register_process', $data);
             } else {
                 "Error: " . $this->movie_model->db_group_name->error();
             }
@@ -99,32 +100,56 @@ class Movie_test extends Controller
         }
     }
 
+    public function book_form($round_id)
+    {
+        if (!$this->session->get('isLoggedIn')) {
 
-    // public function booking()
+            return redirect()->to('/Movie_test/login_form');
+        }
+        $sql = "SELECT round_id, available_seats FROM movie_round WHERE round_id = ?";
+        $query = $this->movie_model->select_binding($sql, [$round_id]);
+
+        if (!empty($query)) {
+            $round = $query[0];
+            $data['round'] = $round;
+            return view('book_form', $data);
+        } else {
+            echo "This screening does not exist.";
+            echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
+        }
+    }
+
+
+
+    // public function book_ticket()
     // {
-    //    if (isset($_POST["user_id"])&&) {
-    //     # code...
-    //    }
-    //     if ($this->request->getMethod() == 'post') {
-    //         $movie_id = $this->request->getPost('movie_id');
-    //         $round_id = $this->request->getPost('round_id');
-    //         $seat_count = $this->request->getPost('seat_count');
-    //         $user_id = $this->session->get('user_id');
+    //     if ($this->session->get('isLoggedIn')) {
+    //         if ($this->request->getMethod() == 'post') {
+    //             $user_id = $this->session->get('user_data')->user_id;
+    //             $round_id = $this->request->getPost('round_id');
+    //             $booked_seats = $this->request->getPost('seats');
 
-    //         $sql = "SELECT * FROM booking WHERE round_id = '$round_id'";
-    //         $query = $this->movie_model->execute($sql);
+    //             $sql = "SELECT available_seats FROM movie_round WHERE round_id = '$round_id'";
+    //             $query = $this->movie_model->execute($sql);
+    //             $result = $query->getRow();
 
-    //         if ($query->getNumRows() > 0) {
+    //             if ($result && $result->available_seats >= $booked_seats) {
+    //                 $new_available_seats = $result->available_seats - $booked_seats;
+    //                 $sql_update = "UPDATE movie_round SET available_seats = '$new_available_seats' WHERE round_id = '$round_id'";
+    //                 $this->movie_model->execute($sql_update);
 
+    //                 $sql_insert = "INSERT INTO booking (user_id, round_id, booked_seats) VALUES ('$user_id', '$round_id', '$booked_seats')";
+    //                 $this->movie_model->execute($sql_insert);
 
-    //             $sql_insert = ""
-    //             $query_insert = $this->movie_model->execute($sql_insert);
-
-    //             if ($query_insert){
-    //                 echo "Booking successful!";
-    //                 echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
+    //                 echo "Booking successful<br>";
+    //                 echo '<br><br><a href="/Movie_test"><button class="mt-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">HOME</button></a>';
+    //             } else {
+    //                 echo "Not enough available seats<br>";
+    //                 echo '<br><br><a href="/Movie_test"><button class="mt-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">HOME</button></a>';
     //             }
     //         }
+    //     } else {
+    //         return redirect()->to('/Movie_test/login_form');
     //     }
     // }
 }

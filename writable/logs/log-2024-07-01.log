@@ -465,3 +465,112 @@ INFO - 2024-07-01 10:21:45 --> Session: Class initialized using 'CodeIgniter\Ses
 WARNING - 2024-07-01 10:21:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
 INFO - 2024-07-01 10:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-01 10:21:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 13:54:54 --> ParseError: syntax error, unexpected token ")"
+in APPPATH\Controllers\Movie_test.php on line 105.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-01 13:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 13:55:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+ERROR - 2024-07-01 13:55:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'Test'@'localhost' (using password: YES) in C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'Test', 'D5CEVO', 'movie_test', 3306, '', 0)
+#1 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci-main\ci\app\Models\Movie_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT round_id...')
+#4 C:\xampp\htdocs\ci-main\ci\app\Controllers\Movie_test.php(30): App\Models\Movie_model->select('SELECT round_id...')
+#5 C:\xampp\htdocs\ci-main\ci\app\Controllers\Movie_test.php(23): App\Controllers\Movie_test->get_movie()
+#6 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+#7 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+#8 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-main\ci\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-main\ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci-main\ci\app\Models\Movie_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT round_id...')
+#3 C:\xampp\htdocs\ci-main\ci\app\Controllers\Movie_test.php(30): App\Models\Movie_model->select('SELECT round_id...')
+#4 C:\xampp\htdocs\ci-main\ci\app\Controllers\Movie_test.php(23): App\Controllers\Movie_test->get_movie()
+#5 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+#6 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+#7 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci-main\ci\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci-main\ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-07-01 13:55:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Movie_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT round_id, movie_name, genre, movie_duration, movie_start_show_time, price FROM movie_detail')
+ 3 APPPATH\Controllers\Movie_test.php(30): App\Models\Movie_model->select('SELECT round_id, movie_name, genre, movie_duration, movie_start_show_time, price FROM movie_detail')
+ 4 APPPATH\Controllers\Movie_test.php(23): App\Controllers\Movie_test->get_movie()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-01 13:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 13:56:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 13:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 13:59:48 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:00:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:00:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:00:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:24:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:24:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:25:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:25:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:25:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:25:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:26:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:26:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:26:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:35:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:35:06 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:35:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-01 14:35:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rigister_process.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rigister_process.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('rigister_process', [], true)
+ 3 APPPATH\Controllers\Movie_test.php(66): view('rigister_process', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->register()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-01 14:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:35:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:36:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:36:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:36:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:36:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:36:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-01 14:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-01 14:36:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
