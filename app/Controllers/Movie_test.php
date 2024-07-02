@@ -100,31 +100,31 @@ class Movie_test extends Controller
     }
 
 
-    public function booking()
-    {
-       if (isset($_POST["user_id"])&&) {
-        # code...
-       }
-        if ($this->request->getMethod() == 'post') {
-            $movie_id = $this->request->getPost('movie_id');
-            $round_id = $this->request->getPost('round_id');
-            $seat_count = $this->request->getPost('seat_count');
-            $user_id = $this->session->get('user_id');
+    // public function booking()
+    // {
+    //    if (isset($_POST["user_id"])&&) {
+    //     # code...
+    //    }
+    //     if ($this->request->getMethod() == 'post') {
+    //         $movie_id = $this->request->getPost('movie_id');
+    //         $round_id = $this->request->getPost('round_id');
+    //         $seat_count = $this->request->getPost('seat_count');
+    //         $user_id = $this->session->get('user_id');
 
-            $sql = "SELECT * FROM booking WHERE round_id = '$round_id'";
-            $query = $this->movie_model->execute($sql);
+    //         $sql = "SELECT * FROM booking WHERE round_id = '$round_id'";
+    //         $query = $this->movie_model->execute($sql);
 
-            if ($query->getNumRows() > 0) {
+    //         if ($query->getNumRows() > 0) {
 
 
-                $sql_insert = ""
-                $query_insert = $this->movie_model->execute($sql_insert);
+    //             $sql_insert = ""
+    //             $query_insert = $this->movie_model->execute($sql_insert);
 
-                if ($query_insert){
-                    echo "Booking successful!";
-                    echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
-                }
-            }
-        }
-    }
+    //             if ($query_insert){
+    //                 echo "Booking successful!";
+    //                 echo '<br><br><a href="/Movie_test"><button>HOME</button></a>';
+    //             }
+    //         }
+    //     }
+    // }
 }
