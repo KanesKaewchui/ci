@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INFO - 2024-07-02 13:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-02 13:10:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
 INFO - 2024-07-02 13:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -33,10 +34,52 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
  3 APPPATH\Models\Movie_model.php(32): CodeIgniter\Database\BaseConnection->query('SELECT round_id, movie_name, genre, movie_duration, movie_start_show_time, price FROM movie_detail')
  4 APPPATH\Controllers\Movie_test.php(30): App\Models\Movie_model->select('SELECT round_id, movie_name, genre, movie_duration, movie_start_show_time, price FROM movie_detail')
  5 APPPATH\Controllers\Movie_test.php(23): App\Controllers\Movie_test->get_movie()
+=======
+CRITICAL - 2024-07-02 02:02:28 --> ParseError: syntax error, unexpected token ")"
+in APPPATH\Controllers\Movie_test.php on line 105.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 02:05:03 --> ParseError: syntax error, unexpected token "<<", expecting "function" or "const"
+in APPPATH\Controllers\Movie_test.php on line 102.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 02:05:04 --> ParseError: syntax error, unexpected token "<<", expecting "function" or "const"
+in APPPATH\Controllers\Movie_test.php on line 102.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 02:05:42 --> ParseError: syntax error, unexpected token "<<", expecting "function" or "const"
+in APPPATH\Controllers\Movie_test.php on line 102.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Movie_test', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Movie_test')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Movie_test')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 02:32:33 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+>>>>>>> 173f0f6c9ce83aef2bc40704c5b842c90305761e
  6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
  7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
 CRITICAL - 2024-07-02 13:49:19 --> [Caused by] mysqli_sql_exception: Unknown column 'round_id' in 'field list'
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
@@ -338,3 +381,1595 @@ INFO - 2024-07-02 15:03:51 --> Session: Class initialized using 'CodeIgniter\Ses
 WARNING - 2024-07-02 15:03:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
 INFO - 2024-07-02 15:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-02 15:03:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+=======
+INFO - 2024-07-02 02:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:33:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:33:04 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:35:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:35:07 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:35:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:35:08 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:35:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:35:08 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:35:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:35:09 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:35:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:35:10 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:35:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:35:17 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:37:18 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:37:18 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 84.
+ 1 APPPATH\Views\viewsmovie.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:47:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:47:45 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 65.
+ 1 APPPATH\Views\viewsmovie.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:47:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 02:47:46 --> ErrorException: Undefined property: stdClass::$available_seats
+in APPPATH\Views\viewsmovie.php on line 65.
+ 1 APPPATH\Views\viewsmovie.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$available_seats', 'C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\viewsmovie.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('viewsmovie', [], true)
+ 5 APPPATH\Controllers\Movie_test.php(24): view('viewsmovie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 02:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:50:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 02:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:51:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 02:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:54:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 02:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:54:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 02:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:55:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 02:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 02:55:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:14:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:15:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:17:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:17:16 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:18:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:19:16 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:19:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:34:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:34:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:38:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:39:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:47:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:47:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:47:41 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:48:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 03:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 03:59:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:00:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:03:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:03:12 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:04:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:04:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:04:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:04:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:04:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:05:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:08:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:17:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:17:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:17:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:17:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:19:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:19:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:20:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:20:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:20:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:21:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:22:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:22:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:23:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:23:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 04:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:23:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 04:45:29 --> ParseError: syntax error, unexpected variable "$respones"
+in APPPATH\Controllers\Appshow.php on line 25.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 04:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:48:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 04:48:52 --> ErrorException: Undefined property: App\Controllers\Appshow::$curl
+in APPPATH\Controllers\Appshow.php on line 25.
+ 1 APPPATH\Controllers\Appshow.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Appshow::$curl', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 04:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:50:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 04:50:24 --> Error: Call to a member function get() on null
+in APPPATH\Controllers\Appshow.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 04:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:50:26 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 04:50:26 --> Error: Call to a member function get() on null
+in APPPATH\Controllers\Appshow.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 04:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:51:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 04:51:31 --> Error: Call to a member function get() on null
+in APPPATH\Controllers\Appshow.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 04:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:51:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 04:51:32 --> Error: Call to a member function get() on null
+in APPPATH\Controllers\Appshow.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 04:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:53:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 04:53:00 --> ErrorException: Undefined variable $users
+in APPPATH\Views\appshow_views.php on line 28.
+ 1 APPPATH\Views\appshow_views.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views', [], true)
+ 5 APPPATH\Controllers\Appshow.php(37): view('appshow_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 04:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 04:56:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:02:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:20:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:22:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:24:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:31:12 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:31:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:38:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:38:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:39:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:39:20 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:40:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:40:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:43:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:47:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:48:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:48:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:49:16 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:50:53 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:50:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:50:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:50:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:52:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:53:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:01:33 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 06:01:33 --> ErrorException: Undefined variable $user
+in APPPATH\Views\appshow_views.php on line 2.
+ 1 APPPATH\Views\appshow_views.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views', [], true)
+ 5 APPPATH\Controllers\Appshow.php(39): view('appshow_views', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 06:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:02:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 06:02:23 --> ErrorException: Array to string conversion
+in APPPATH\Views\appshow_views.php on line 2.
+ 1 APPPATH\Views\appshow_views.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views', [], true)
+ 5 APPPATH\Controllers\Appshow.php(39): view('appshow_views', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 06:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:02:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:05:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 06:05:50 --> ErrorException: Undefined variable $user
+in APPPATH\Views\appshow_views.php on line 21.
+ 1 APPPATH\Views\appshow_views.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views', [], true)
+ 5 APPPATH\Controllers\Appshow.php(39): view('appshow_views', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 06:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:06:12 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:07:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:08:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:09:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:10:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:10:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:16:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 06:16:06 --> Error: Call to undefined function DateThai()
+in APPPATH\Views\appshow_views.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views', [], true)
+ 4 APPPATH\Controllers\Appshow.php(39): view('appshow_views', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 06:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:18:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:20:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:22:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:23:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:25:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:27:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:30:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:31:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:31:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:31:33 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:32:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:40:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:40:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:41:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:41:57 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:46:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:46:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:47:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:50:21 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:50:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:51:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:53:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:53:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:54:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:54:18 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:54:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:55:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:55:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:56:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:58:57 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:59:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 06:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 06:59:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:08:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:09:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:13:26 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:13:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:19:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:19:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:20:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:20:54 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:21:20 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:21:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:21:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:22:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:23:20 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:23:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:23:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:24:21 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:24:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:26:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:28:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:29:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:29:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:37:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:40:18 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:45:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:45:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:46:06 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:47:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:47:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:47:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 07:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 07:51:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 08:20:45 --> ErrorException: Undefined array key "more_data"
+in APPPATH\Controllers\Appshow.php on line 37.
+ 1 APPPATH\Controllers\Appshow.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "more_data"', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 09:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 09:06:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:09:07 --> ErrorException: Undefined variable $users
+in APPPATH\Controllers\Appshow2.php on line 30.
+ 1 APPPATH\Controllers\Appshow2.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php', 30)
+ 2 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php')
+ 3 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow2', 'get')
+ 4 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow2')
+ 5 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow2')
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:09:29 --> ErrorException: Undefined variable $users
+in APPPATH\Controllers\Appshow2.php on line 30.
+ 1 APPPATH\Controllers\Appshow2.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php', 30)
+ 2 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php')
+ 3 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow2', 'get')
+ 4 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow2')
+ 5 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow2')
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:11:17 --> ErrorException: Undefined variable $users
+in APPPATH\Controllers\Appshow2.php on line 30.
+ 1 APPPATH\Controllers\Appshow2.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php', 30)
+ 2 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php')
+ 3 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow2', 'get')
+ 4 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow2')
+ 5 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow2')
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:11:51 --> ErrorException: Undefined variable $users
+in APPPATH\Controllers\Appshow2.php on line 30.
+ 1 APPPATH\Controllers\Appshow2.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php', 30)
+ 2 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php')
+ 3 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow2', 'get')
+ 4 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow2')
+ 5 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow2')
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:14:36 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Appshow.php on line 36.
+ 1 APPPATH\Controllers\Appshow.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:14:47 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Appshow.php on line 36.
+ 1 APPPATH\Controllers\Appshow.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:18:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:18:44 --> ErrorException: Undefined array key "updatetime"
+in APPPATH\Views\appshow_views.php on line 109.
+ 1 APPPATH\Views\appshow_views.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "updatetime"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php', 109)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:21:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:21:10 --> ErrorException: Undefined array key "startdate"
+in APPPATH\Views\appshow_views2.php on line 107.
+ 1 APPPATH\Views\appshow_views2.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startdate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 107)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:21:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:21:35 --> ErrorException: Undefined array key "startdate"
+in APPPATH\Views\appshow_views2.php on line 107.
+ 1 APPPATH\Views\appshow_views2.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startdate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 107)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:26:21 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:26:21 --> ErrorException: Undefined array key "enddate"
+in APPPATH\Views\appshow_views2.php on line 108.
+ 1 APPPATH\Views\appshow_views2.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "enddate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 108)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:26:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:29:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:29:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:31:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:31:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:32:16 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:32:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:33:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:35:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:36:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:37:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:42:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:42:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:42:42 --> ErrorException: Undefined array key "startdate"
+in APPPATH\Views\appshow_views2.php on line 80.
+ 1 APPPATH\Views\appshow_views2.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startdate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:42:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:42:55 --> ErrorException: Undefined array key "startdate"
+in APPPATH\Views\appshow_views2.php on line 80.
+ 1 APPPATH\Views\appshow_views2.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startdate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:45:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:45:40 --> ParseError: syntax error, unexpected token "endforeach"
+in APPPATH\Views\appshow_views2.php on line 85.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 3 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:46:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:46:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:53:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:53:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:53:57 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:56:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:58:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:59:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 11:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:00:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 11:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:02:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+>>>>>>> 173f0f6c9ce83aef2bc40704c5b842c90305761e
+CRITICAL - 2024-07-02 15:08:56 --> ErrorException: Cannot redeclare App\Controllers\Movie_test::book_form()
+in APPPATH\Controllers\Movie_test.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-07-02 15:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:10:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:11:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+ERROR - 2024-07-02 15:11:00 --> mysqli_sql_exception: Unknown column 'movie_round.movie_start_show_time' in 'field list' in C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\ci-main\ci\app\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#4 C:\xampp\htdocs\ci-main\ci\app\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT \r\n      ...', Array)
+#5 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+#6 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+#7 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci-main\ci\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci-main\ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-07-02 15:11:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 2 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+CRITICAL - 2024-07-02 15:11:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 3 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 4 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+CRITICAL - 2024-07-02 15:11:00 --> [Caused by] mysqli_sql_exception: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 4 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 5 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-02 15:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:11:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:12:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:12:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:13:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:13:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:13:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+ERROR - 2024-07-02 15:13:08 --> mysqli_sql_exception: Unknown column 'movie_round.movie_start_show_time' in 'field list' in C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\ci-main\ci\app\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#4 C:\xampp\htdocs\ci-main\ci\app\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT \r\n      ...', Array)
+#5 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+#6 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+#7 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci-main\ci\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci-main\ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-07-02 15:13:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 2 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+CRITICAL - 2024-07-02 15:13:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 3 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 4 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+CRITICAL - 2024-07-02 15:13:08 --> [Caused by] mysqli_sql_exception: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 4 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 5 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-02 15:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:14:48 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+ERROR - 2024-07-02 15:14:48 --> mysqli_sql_exception: Unknown column 'movie_round.movie_start_show_time' in 'field list' in C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\ci-main\ci\app\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#4 C:\xampp\htdocs\ci-main\ci\app\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT \r\n      ...', Array)
+#5 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+#6 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+#7 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci-main\ci\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci-main\ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-07-02 15:14:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 2 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+CRITICAL - 2024-07-02 15:14:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 3 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 4 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+CRITICAL - 2024-07-02 15:14:48 --> [Caused by] mysqli_sql_exception: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 4 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 5 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-02 15:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:16:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+ERROR - 2024-07-02 15:16:28 --> mysqli_sql_exception: Unknown column 'movie_round.movie_start_show_time' in 'field list' in C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-main\ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\ci-main\ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\ci-main\ci\app\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#4 C:\xampp\htdocs\ci-main\ci\app\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT \r\n      ...', Array)
+#5 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+#6 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+#7 C:\xampp\htdocs\ci-main\ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci-main\ci\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci-main\ci\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-07-02 15:16:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 2 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+CRITICAL - 2024-07-02 15:16:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 3 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 4 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+CRITICAL - 2024-07-02 15:16:28 --> [Caused by] mysqli_sql_exception: Unknown column 'movie_round.movie_start_show_time' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = \'1\'')
+ 4 APPPATH\Models\Movie_model.php(37): CodeIgniter\Database\BaseConnection->query('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 5 APPPATH\Controllers\Movie_test.php(120): App\Models\Movie_model->select_binding('SELECT 
+                    movie_round.round_id, 
+                    movie_detail.movie_name, 
+                    movie_detail.genre, 
+                    movie_detail.movie_duration, 
+                    movie_round.movie_start_show_time, 
+                    movie_detail.price, 
+                    movie_round.available_seats 
+                FROM 
+                    movie_round 
+                JOIN 
+                    movie_detail 
+                ON 
+                    movie_round.movie_id = movie_detail.movie_id 
+                WHERE 
+                    movie_round.round_id = ?', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Movie_test->book_form('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Movie_test))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-02 15:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:20:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:20:36 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:20:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 15:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 15:20:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();

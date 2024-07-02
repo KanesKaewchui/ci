@@ -102,21 +102,22 @@ class Movie_test extends Controller
     public function book_form($round_id)
     {
         $sql = "SELECT 
-                    movie_round.round_id, 
-                    movie_detail.movie_name, 
-                    movie_detail.genre, 
-                    movie_detail.movie_duration, 
-                    movie_round.round_time AS movie_start_show_time, 
-                    movie_detail.price, 
-                    movie_round.available_seats 
-                FROM 
-                    movie_round 
-                JOIN 
-                    movie_detail 
-                ON 
-                    movie_round.movie_id = movie_detail.movie_id 
-                WHERE 
-                    movie_round.round_id = ?";
+            movie_round.round_id, 
+            movie_detail.movie_name, 
+            movie_detail.genre, 
+            movie_detail.movie_duration, 
+            movie_round.round_time AS movie_start_show_time, 
+            movie_detail.price, 
+            movie_round.available_seats 
+        FROM 
+            movie_round 
+        JOIN 
+            movie_detail 
+        ON 
+            movie_round.movie_id = movie_detail.movie_id 
+        WHERE 
+            movie_round.round_id = ?";
+
         $query = $this->movie_model->select_binding($sql, [$round_id]);
     
         if (!empty($query)) {
@@ -130,8 +131,6 @@ class Movie_test extends Controller
     }
     
     
-    
-
     public function book_ticket()
     {
         if ($this->request->getMethod() == 'post') {
