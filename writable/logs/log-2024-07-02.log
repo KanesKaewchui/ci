@@ -573,3 +573,190 @@ in APPPATH\Controllers\Appshow.php on line 37.
  5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
 INFO - 2024-07-02 09:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-02 09:06:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:09:07 --> ErrorException: Undefined variable $users
+in APPPATH\Controllers\Appshow2.php on line 30.
+ 1 APPPATH\Controllers\Appshow2.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php', 30)
+ 2 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php')
+ 3 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow2', 'get')
+ 4 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow2')
+ 5 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow2')
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:09:29 --> ErrorException: Undefined variable $users
+in APPPATH\Controllers\Appshow2.php on line 30.
+ 1 APPPATH\Controllers\Appshow2.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php', 30)
+ 2 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php')
+ 3 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow2', 'get')
+ 4 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow2')
+ 5 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow2')
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:11:17 --> ErrorException: Undefined variable $users
+in APPPATH\Controllers\Appshow2.php on line 30.
+ 1 APPPATH\Controllers\Appshow2.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php', 30)
+ 2 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php')
+ 3 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow2', 'get')
+ 4 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow2')
+ 5 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow2')
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:11:51 --> ErrorException: Undefined variable $users
+in APPPATH\Controllers\Appshow2.php on line 30.
+ 1 APPPATH\Controllers\Appshow2.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php', 30)
+ 2 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow2.php')
+ 3 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Appshow2', 'get')
+ 4 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Appshow2')
+ 5 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Appshow2')
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:14:36 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Appshow.php on line 36.
+ 1 APPPATH\Controllers\Appshow.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:14:47 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Appshow.php on line 36.
+ 1 APPPATH\Controllers\Appshow.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\Appshow.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:18:44 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:18:44 --> ErrorException: Undefined array key "updatetime"
+in APPPATH\Views\appshow_views.php on line 109.
+ 1 APPPATH\Views\appshow_views.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "updatetime"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php', 109)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:21:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:21:10 --> ErrorException: Undefined array key "startdate"
+in APPPATH\Views\appshow_views2.php on line 107.
+ 1 APPPATH\Views\appshow_views2.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startdate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 107)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:21:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:21:35 --> ErrorException: Undefined array key "startdate"
+in APPPATH\Views\appshow_views2.php on line 107.
+ 1 APPPATH\Views\appshow_views2.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startdate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 107)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:26:21 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:26:21 --> ErrorException: Undefined array key "enddate"
+in APPPATH\Views\appshow_views2.php on line 108.
+ 1 APPPATH\Views\appshow_views2.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "enddate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 108)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:26:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:29:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:29:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:31:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:31:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:32:16 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:32:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:33:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:35:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:36:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:37:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:42:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:42:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:42:42 --> ErrorException: Undefined array key "startdate"
+in APPPATH\Views\appshow_views2.php on line 80.
+ 1 APPPATH\Views\appshow_views2.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startdate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:42:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:42:55 --> ErrorException: Undefined array key "startdate"
+in APPPATH\Views\appshow_views2.php on line 80.
+ 1 APPPATH\Views\appshow_views2.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "startdate"', 'C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\appshow_views2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 5 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:45:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-02 10:45:40 --> ParseError: syntax error, unexpected token "endforeach"
+in APPPATH\Views\appshow_views2.php on line 85.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('appshow_views2', [], true)
+ 3 APPPATH\Controllers\Appshow2.php(39): view('appshow_views2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Appshow2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Appshow2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-02 10:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:46:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:46:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:53:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:53:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:53:57 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:56:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:58:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 10:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 10:59:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 11:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:00:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 11:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 11:02:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
