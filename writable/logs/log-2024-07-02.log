@@ -329,3 +329,15 @@ in APPPATH\Views\appshow_views.php on line 28.
  9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
 INFO - 2024-07-02 04:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-02 04:56:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:02:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:20:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:22:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:24:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:31:12 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-02 05:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-02 05:31:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
