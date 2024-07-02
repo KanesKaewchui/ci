@@ -11,11 +11,9 @@
         <strong class="font-bold">Registration successful</strong>
         <span class="block sm:inline">
             <br>
-            User ID: <?php echo $user_id; ?><br>
             Username: <?php echo $username; ?><br>
             Password: <?php echo $password; ?><br>
             Birthday: <?php echo $birthday; ?><br>
-            Created Time: <?php echo $created_time; ?>
         </span>
         <br><br>
         <a href="/Movie_test">
