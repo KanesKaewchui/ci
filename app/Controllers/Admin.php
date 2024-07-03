@@ -3,15 +3,18 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use CodeIgniter\Database\Query;
 
 class Admin extends BaseController
 {
     protected $session;
+    protected $db;
 
     public function __construct()
     {
         $this->session = \Config\Services::session();
         $this->session->start();
+        $this->db = \Config\Database::connect();
     }
 
     public function index()
@@ -20,6 +23,18 @@ class Admin extends BaseController
             return redirect()->to('/admin/login');
         }
         return view('admin/dashboard');
+    }
+
+    public function movies()
+    {
+        if (!$this->isLoggedIn()) {
+            return redirect()->to('/admin/login');
+        }
+
+        $query = $this->db->query("SELECT * FROM movie_detail");
+        $data['movies'] = $query->getResult();
+
+        return view('admin/movies', $data);
     }
 
     public function login()
@@ -48,5 +63,60 @@ class Admin extends BaseController
     protected function isLoggedIn()
     {
         return $this->session->has('admin_id');
+    }
+
+    public function edit_movie($movie_id)
+    {
+        if (!$this->isLoggedIn()) {
+            return redirect()->to('/admin/login');
+        }
+
+        $query = $this->db->query("SELECT * FROM movie_detail WHERE movie_id = ?", [$movie_id]);
+        $movie = $query->getRow();
+
+        if ($this->request->getMethod() == 'post') {
+            $data = [
+                'movie_name' => $this->request->getPost('movie_name'),
+                'genre' => $this->request->getPost('genre'),
+                'movie_duration' => $this->request->getPost('movie_duration'),
+                'price' => $this->request->getPost('price'),
+            ];
+
+            $this->db->table('movie_detail')->update($data, ['movie_id' => $movie_id]);
+            return redirect()->to('/admin/movies');
+        }
+
+        return view('admin/edit_movie', ['movie' => $movie]);
+    }
+
+    public function delete_movie($movie_id)
+    {
+        if (!$this->isLoggedIn()) {
+            return redirect()->to('/admin/login');
+        }
+
+        $this->db->table('movie_detail')->delete(['movie_id' => $movie_id]);
+        return redirect()->to('/admin/movies');
+    }
+
+    public function add_movie()
+    {
+        if (!$this->isLoggedIn()) {
+            return redirect()->to('/admin/login');
+        }
+
+        if ($this->request->getMethod() == 'post') {
+            $data = [
+                'movie_name' => $this->request->getPost('movie_name'),
+                'genre' => $this->request->getPost('genre'),
+                'movie_duration' => $this->request->getPost('movie_duration'),
+                'price' => $this->request->getPost('price'),
+            ];
+
+            $this->db->table('movie_detail')->insert($data);
+            return redirect()->to('/admin/movies');
+        }
+
+        return view('admin/add_movie');
     }
 }

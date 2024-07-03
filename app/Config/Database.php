@@ -19,17 +19,17 @@ class Database extends Config
      * Lets you choose which connection group to
      * use if no other is specified.
      */
-    public string $defaultGroup = 'db_user';
+    public string $defaultGroup = 'full_ss4';
 
     /**
      * The default database connection.
      */
-    public array $db_user = [
+    public array $full_ss4 = [
         'DSN'          => '',
         'hostname'     => 'localhost',
         'username'     => 'Test',
         'password'     => 'D5CEVO',
-        'database'     => 'db_user',
+        'database'     => 'full_ss4',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
@@ -48,8 +48,8 @@ class Database extends Config
     public array $movie_test = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'root',
-        'password'     => '',
+        'username'     => 'Test',
+        'password'     => 'D5CEVO',
         'database'     => 'movie_test',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',

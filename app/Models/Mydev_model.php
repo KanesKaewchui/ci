@@ -14,7 +14,7 @@ class Mydev_model extends Model
 
     function __construct()
     {
-        $this->db_group_name = \Config\Database::connect('db_user');
+        $this->db_group_name = \Config\Database::connect('full_ss4');
         parent::__construct();
     }
     function execute($strSQL)

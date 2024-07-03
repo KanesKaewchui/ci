@@ -13,34 +13,35 @@
         <div class="space-x-4 ml-auto">
             <a href="/Movie_test/login_form" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded text-white">Login</a>
             <a href="/Movie_test/register_form" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded text-white">Register</a>
+            <a href="/admin/login" class="px-4 py-2 bg-green-500 hover:bg-green-600 rounded text-white">Admin Login</a>
         </div>
     </nav>
 
     <div class="max-w-lg mx-auto bg-white p-8 mt-5 rounded-lg shadow-md">
         <h2 class="text-2xl font-bold mb-4 text-center">Movie List</h2>
         <ul class="space-y-4">
-        <?php if (!empty($movies)) : ?>
-            <?php foreach ($movies as $movie) : ?>
-                <li class="bg-gray-200 p-4 rounded-lg shadow-md mb-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold"><?= $movie->movie_name ?></h3>
-                            <p><strong>Genre:</strong> <?= $movie->genre ?></p>
-                            <p><strong>Duration:</strong> <?= $movie->movie_duration ?> minutes</p>
-                            <p><strong>Start Time:</strong> <?= $movie->round_time ?></p>
-                            <p><strong>Price:</strong> ฿ <?= $movie->price ?></p>
-                            <p><strong>Available Seats:</strong> <?= $movie->available_seats ?></p>
+            <?php if (!empty($movies)) : ?>
+                <?php foreach ($movies as $movie) : ?>
+                    <li class="bg-gray-200 p-4 rounded-lg shadow-md mb-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold"><?= $movie->movie_name ?></h3>
+                                <p><strong>Genre:</strong> <?= $movie->genre ?></p>
+                                <p><strong>Duration:</strong> <?= $movie->movie_duration ?> minutes</p>
+                                <p><strong>Start Time:</strong> <?= $movie->round_time ?></p>
+                                <p><strong>Price:</strong> ฿ <?= $movie->price ?></p>
+                                <p><strong>Available Seats:</strong> <?= $movie->available_seats ?></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mt-5">
-                        <a href="/Movie_test/book_form/<?= $movie->round_id ?>" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Book</a>
-                    </div>
-                </li>
+                        <div class="mt-5">
+                            <a href="/Movie_test/book_form/<?= $movie->round_id ?>" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Book</a>
+                        </div>
+                    </li>
 
-            <?php endforeach; ?>
-        <?php else : ?>
-        <li class="text-red-500">No movies found.</li>
-        <?php endif; ?>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <li class="text-red-500">No movies found.</li>
+            <?php endif; ?>
         </ul>
     </div>
 </body>
