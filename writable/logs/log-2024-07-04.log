@@ -847,3 +847,24 @@ INFO - 2024-07-04 09:59:50 --> Session: Class initialized using 'CodeIgniter\Ses
 WARNING - 2024-07-04 09:59:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
 INFO - 2024-07-04 10:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-04 10:00:16 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 10:09:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 10:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 10:12:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 10:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 10:20:54 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 10:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 10:21:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 10:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 10:23:18 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 10:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 10:28:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-04 10:28:29 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\ApiDataController.php on line 94.
+ 1 APPPATH\Controllers\ApiDataController.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\ApiDataController.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiDataController->getapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiDataController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-04 10:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 10:29:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
