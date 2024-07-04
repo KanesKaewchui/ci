@@ -24,6 +24,9 @@ class ApiDataController extends Controller
     public function index()
     {
         $url = 'http://localhost:8080/ApiDataController/getapi';
+
+
+
         $codehot = $this->curl->get($url);
         $data["users"] = json_decode($codehot->body, true);
 
@@ -56,6 +59,38 @@ class ApiDataController extends Controller
 
     public function getapi()
     {
+        $token_test = 'test123';
+        $event_id_test = 1;
+        $gen_date_token_test = '2024-07-05 14:00:00';
+
+        if (!isset($_GET['token_test'])) {
+            echo "missing token";
+            exit;
+        }
+
+        if (!isset($_GET['gen_date_token_test'])) {
+            echo "missing date";
+            exit;
+        }
+
+        if (!isset($_GET['event_id_test'])) {
+            echo "missing id";
+            exit;
+        }
+
+
+        $token = $_GET['token_test'];
+        $gen_date_token = $_GET['gen_date_token_test'];
+        $event_id = $_GET['event_id_test'];
+
+        $chk_token = md5($token . "|" . $event_id . "|" . $gen_date_token . "|" . "Hello world");
+
+        $data = md5($token_test . "|" . $event_id_test . "|" . $gen_date_token_test . "|" . "Hello world");
+
+        if ($chk_token !== $data) {
+            echo "Invalid Token";
+        }
+
 
         $sql = 'SELECT user_id,user_name,user_logo,count_gift FROM event_detail WHERE event_id = 1';
         $query = $this->mydev_model->select($sql);

@@ -708,3 +708,138 @@ INFO - 2024-07-04 07:38:24 --> Session: Class initialized using 'CodeIgniter\Ses
 WARNING - 2024-07-04 07:38:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
 INFO - 2024-07-04 07:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-04 07:40:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:22:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-04 08:22:42 --> Error: Method name must be a string
+in APPPATH\Controllers\ApiDataController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiDataController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiDataController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-04 08:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:30:26 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-04 08:30:27 --> Error: Array callback must have exactly two elements
+in APPPATH\Controllers\ApiDataController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiDataController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiDataController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-04 08:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:30:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:30:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:34:20 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:34:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-04 08:34:23 --> Error: Array callback must have exactly two elements
+in APPPATH\Controllers\ApiDataController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiDataController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiDataController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-04 08:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:34:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:34:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:34:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:35:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:35:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-04 08:35:32 --> Error: Array callback must have exactly two elements
+in APPPATH\Controllers\ApiDataController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiDataController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiDataController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-04 08:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:42:26 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-04 08:42:26 --> ErrorException: Undefined array key "token"
+in APPPATH\Controllers\ApiDataController.php on line 28.
+ 1 APPPATH\Controllers\ApiDataController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "token"', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\ApiDataController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiDataController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiDataController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-04 08:45:13 --> ParseError: syntax error, unexpected variable "$codehot"
+in APPPATH\Controllers\ApiDataController.php on line 43.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('ApiDataController/index', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('ApiDataController/index')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('ApiDataController/index')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-04 08:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:49:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:50:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 08:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:57:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-04 08:57:27 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\indexcallplay.php on line 226.
+ 1 APPPATH\Views\indexcallplay.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci\\app\\Views\\indexcallplay.php', 226)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\indexcallplay.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('indexcallplay', [], true)
+ 5 APPPATH\Controllers\ApiDataController.php(34): view('indexcallplay', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiDataController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiDataController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-04 08:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 08:57:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:00:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:02:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:04:03 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:04:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:06:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:06:41 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:07:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:10:54 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:10:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:23:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:23:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:24:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:34:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:35:06 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:38:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-04 09:38:25 --> ErrorException: Undefined array key "gen_date_token"
+in APPPATH\Controllers\ApiDataController.php on line 87.
+ 1 APPPATH\Controllers\ApiDataController.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gen_date_token"', 'C:\\xampp\\htdocs\\ci\\app\\Controllers\\ApiDataController.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ApiDataController->getapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiDataController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-04 09:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:39:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:40:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:40:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:47:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:49:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:52:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:52:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-04 09:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-04 09:55:41 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
