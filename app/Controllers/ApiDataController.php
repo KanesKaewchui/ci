@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-use App\Models\Movie_model;
 use App\Models\Mydev_model;
 use App\Libraries\aescrypt;
 use App\Libraries\curl;
 use CodeIgniter\Controller;
+use App\Libraries\Jwt;
 
 class ApiDataController extends Controller
 {
@@ -19,13 +19,12 @@ class ApiDataController extends Controller
         $this->session = \Config\Services::session();
         $this->session->start();
         $this->mydev_model = new Mydev_model();
+        $this->Jwt = new Jwt;
     }
 
     public function index()
     {
         $url = 'http://localhost:8080/ApiDataController/getapi';
-
-
 
         $codehot = $this->curl->get($url);
         $data["users"] = json_decode($codehot->body, true);
@@ -57,17 +56,31 @@ class ApiDataController extends Controller
         }
     }
 
+    public function generateToken($user_id, $event_id)
+    {
+        $issued_at = time();
+        $expiration_time = $issued_at + 3600;
+        $payload = [
+            'user_id' => $user_id,
+            'event_id' => $
+        ]
+    }
+
     public function getapi()
     {
+        if (!isset($_GET['token'])) {
+            echo "missing token";
+            exit;
+        }
+
+        $token = $_GET['token'];
+
+
 
         // $token_test = 'test123';
         $event_id_test = 1;
         $gen_date_token_test = '2024-07-05 14:00:00';
 
-        if (!isset($_GET['token'])) {
-            echo "missing token";
-            exit;
-        }
 
 
         // if (!isset($_GET['gen_date_token_test'])) {
@@ -81,7 +94,6 @@ class ApiDataController extends Controller
         // }
 
 
-        $token = $_GET['token'];
         $gen_date_token = $_GET['gen_date_token_test'];
         $event_id = $_GET['event_id_test'];
 
@@ -136,8 +148,6 @@ class ApiDataController extends Controller
                 }
             }
         }
-
-
 
         $group = [
             'th_lang' => $th_lang,

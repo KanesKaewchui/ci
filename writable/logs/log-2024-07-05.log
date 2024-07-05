@@ -1,0 +1,54 @@
+CRITICAL - 2024-07-05 04:19:57 --> Error: Class "App\Controllers\Contoller" not found
+in APPPATH\Controllers\Marketplace_Contoller.php on line 11.
+ 1 SYSTEMPATH\Router\AutoRouter.php(161): include_once()
+ 2 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Marketplace_Contoller', 'get')
+ 3 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Marketplace_Contoller')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Marketplace_Contoller')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 04:20:23 --> Error: Class "App\Controllers\Contoller" not found
+in APPPATH\Controllers\Marketplace_Contoller.php on line 11.
+ 1 SYSTEMPATH\Router\AutoRouter.php(161): include_once()
+ 2 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Marketplace_Contoller', 'get')
+ 3 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Marketplace_Contoller')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Marketplace_Contoller')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 04:21:07 --> Error: Class "App\Controllers\Contoller" not found
+in APPPATH\Controllers\Marketplace_Contoller.php on line 11.
+ 1 SYSTEMPATH\Router\AutoRouter.php(161): include_once()
+ 2 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Marketplace_Contoller', 'get')
+ 3 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Marketplace_Contoller')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Marketplace_Contoller')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-05 04:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 04:21:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-05 04:21:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Marketplace_views.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Marketplace_views.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace_views', [], true)
+ 3 APPPATH\Controllers\Marketplace_Contoller.php(27): view('Marketplace_views')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace_Contoller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace_Contoller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-05 04:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 04:21:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 04:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 04:22:06 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 04:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 04:22:50 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 04:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 04:23:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 04:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 04:45:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 05:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 05:29:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 05:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 05:41:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 06:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 06:15:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
