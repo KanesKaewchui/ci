@@ -39,7 +39,7 @@ class MarketplaceController extends Controller
             $query = $this->mydev_model->execute($sql);
 
             if ($query) {
-                echo "Registration successful<br>";
+                echo "Registration successful";
                 echo "Username: " . $username . "<br>";
                 echo "Email: " . $email . "<br>";
                 echo "Password: " . $md5password . "<br>";

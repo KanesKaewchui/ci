@@ -69,8 +69,8 @@
             </div>
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
-                    <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                    <h1 class="text-lg font-bold text-gray-900 mb-6">Kilowatt Case</h1>
                     <p class="text-base text-gray-700">DCounter-Strike 2</p>
                 </a>
             </div>
@@ -83,8 +83,8 @@
             </div>
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
-                    <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                    <h1 class="text-lg font-bold text-gray-900 mb-6">Kilowatt Case</h1>
                     <p class="text-base text-gray-700">DCounter-Strike 2</p>
                 </a>
             </div>

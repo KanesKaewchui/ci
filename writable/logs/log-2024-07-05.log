@@ -165,3 +165,74 @@ in SYSTEMPATH\Database\Config.php on line 70.
  7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
 INFO - 2024-07-05 08:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-05 08:47:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:56:06 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:56:20 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+ERROR - 2024-07-05 08:56:20 --> mysqli_sql_exception: Table 'full_ss4.register' doesn't exist in C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO reg...', 0)
+#1 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO reg...')
+#2 C:\xampp\htdocs\ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO reg...')
+#3 C:\xampp\htdocs\ci\app\Models\Mydev_model.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO reg...')
+#4 C:\xampp\htdocs\ci\app\Controllers\MarketplaceController.php(39): App\Models\Mydev_model->execute('INSERT INTO reg...')
+#5 C:\xampp\htdocs\ci\system\CodeIgniter.php(941): App\Controllers\MarketplaceController->register()
+#6 C:\xampp\htdocs\ci\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarketplaceController))
+#7 C:\xampp\htdocs\ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-07-05 08:56:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'full_ss4.register' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Mydev_model.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 2 APPPATH\Controllers\MarketplaceController.php(39): App\Models\Mydev_model->execute('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MarketplaceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarketplaceController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 08:56:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'full_ss4.register' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 3 APPPATH\Models\Mydev_model.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 4 APPPATH\Controllers\MarketplaceController.php(39): App\Models\Mydev_model->execute('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MarketplaceController->register()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarketplaceController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-05 08:56:20 --> [Caused by] mysqli_sql_exception: Table 'full_ss4.register' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 4 APPPATH\Models\Mydev_model.php(22): CodeIgniter\Database\BaseConnection->query('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 5 APPPATH\Controllers\MarketplaceController.php(39): App\Models\Mydev_model->execute('INSERT INTO register (username, email, password, created_at) VALUES (\'test1\', \'test1@hotmail.com\' ,\'test1\', NOW())')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MarketplaceController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-05 08:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:57:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:58:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:59:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:01:03 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:08:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:08:53 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:09:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:09:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:09:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:09:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:09:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:09:48 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 09:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 09:10:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
