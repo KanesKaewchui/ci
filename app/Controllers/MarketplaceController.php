@@ -39,14 +39,22 @@ class MarketplaceController extends Controller
             $query = $this->mydev_model->execute($sql);
 
             if ($query) {
-                echo "Registration successful";
-                echo "Username: " . $username . "<br>";
-                echo "Email: " . $email . "<br>";
-                echo "Password: " . $md5password . "<br>";
-                echo "Created Time: now";
+                $response = [
+                    'message' => 'Registration successful',
+                    'Username' => $username,
+                    'Email' => $email,
+                    'Password' => $md5password,
+                    'created_at' => date('Y-m-d H:i:s'),
+                ];
             } else {
-                echo "Error: " . $this->mydev_model->db_group_name->error();
+                $response = [
+                    'status' => 'error',
+                    'message' => 'Error: '. $this->mydev_model->db_group_name->error();
+
+                ];
             }
+            header('Content-Type: application/json');
+            echo json_encode($response);
         } else {
             return view('register_Marketplace_form');
         }
