@@ -23,7 +23,7 @@
                     </div>
                     <!-- navber links -->
                     <div class="hidden md:flex items-center space-x-1">
-                        <a href="#" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
+                        <a href="promotion_Marketplace_page.php" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
                         <a href="#" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
                         <a href="#" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
                     </div>
@@ -48,7 +48,7 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu hidden md:hidden">
-        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Promotion</a>
+        <a href="promotion_Marketplace_page.php" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Promotion</a>
         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Category</a>
         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Trending</a>
         <div class="flex justify-center space-x-4 mt-4">

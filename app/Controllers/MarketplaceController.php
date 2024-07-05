@@ -65,4 +65,9 @@ class MarketplaceController extends Controller
     {
         return view('login_Marketplace_form');
     }
+
+    public function promotion()
+    {
+        return view('promotion_Marketplace_page');
+    }
 }
