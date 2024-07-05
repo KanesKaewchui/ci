@@ -27,28 +27,30 @@ class MarketplaceController extends Controller
         return view('Marketplace_views');
     }
 
-    // public function register()
-    // {
-    //     if ($this->request->getMethod() == 'post') {
-    //         $username = $this->request->getPost('username');
-    //         $password = $this->request->getPost('password');
-    //         $md5password  = md5($password);
+    public function register()
+    {
+        if ($this->request->getMethod() == 'post') {
+            $username = $this->request->getPost('username');
+            $email = $this->request->getPost('email');
+            $password = $this->request->getPost('password');
+            $md5password  = md5($password);
 
-    //         $sql = "INSERT INTO register (username, password, userid, create_time) VALUES ('$username', '$password', '$userid', NOW())";
-    //         $query = $this->mydev_model->execute($sql);
+            $sql = "INSERT INTO register (username, email, password, created_at) VALUES ('$username', '$email' ,'$password', NOW())";
+            $query = $this->mydev_model->execute($sql);
 
-    //         if ($query) {
-    //             echo "Registration successful<br>";
-    //             echo "Username: " . $username . "<br>";
-    //             echo "Password: " . $md5password . "<br>";
-    //             echo "Created Time: now";
-    //         } else {
-    //             echo "Error: " . $this->mydev_model->db_group_name->error();
-    //         }
-    //     } else {
-    //         return view('Marketplace_views');
-    //     }
-    // }
+            if ($query) {
+                echo "Registration successful<br>";
+                echo "Username: " . $username . "<br>";
+                echo "Email: " . $email . "<br>";
+                echo "Password: " . $md5password . "<br>";
+                echo "Created Time: now";
+            } else {
+                echo "Error: " . $this->mydev_model->db_group_name->error();
+            }
+        } else {
+            return view('register_Marketplace_form');
+        }
+    }
 
     public function login()
     {

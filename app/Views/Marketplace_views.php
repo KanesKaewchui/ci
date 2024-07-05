@@ -30,7 +30,7 @@
                 </div>
                 <!-- Register & login button -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
+                    <a href="<?php echo site_url('MarketplaceController/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
                     <a href="<?php echo site_url('MarketplaceController/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
                 </div>
                 <!-- Mobile menu button -->
@@ -52,7 +52,7 @@
         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Category</a>
         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Trending</a>
         <div class="flex justify-center space-x-4 mt-4">
-            <button class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</button>
+            <a href="<?php echo site_url('MarketplaceController/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
             <a href="<?php echo site_url('MarketplaceController/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
         </div>
     </div>
@@ -100,37 +100,6 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
-
-
-    <!-- Register Form -->
-    <!-- <form id="registerForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                    Username
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="regUsername" type="text" placeholder="Username">
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                    Email
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="regEmail" type="email" placeholder="Email">
-            </div>
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="regPassword">
-                    Password
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="regPassword" type="password" placeholder="Password">
-            </div>
-            <div class="flex items-center justify-between">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="register()">
-                    Register
-                </button>
-            </div>
-        </form> -->
-
-
-
 
 
     <script>

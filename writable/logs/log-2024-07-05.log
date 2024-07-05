@@ -140,3 +140,28 @@ INFO - 2024-07-05 08:23:07 --> Session: Class initialized using 'CodeIgniter\Ses
 WARNING - 2024-07-05 08:23:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
 INFO - 2024-07-05 08:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-05 08:23:13 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:24:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:24:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:29:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:29:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:34:06 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:39:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-05 08:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:46:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-05 08:46:52 --> InvalidArgumentException: Marketplace is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(153): CodeIgniter\Database\Config::connect('Marketplace')
+ 2 APPPATH\Models\Mydev_model.php(18): CodeIgniter\Model->__construct()
+ 3 APPPATH\Controllers\MarketplaceController.php(21): App\Models\Mydev_model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\MarketplaceController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-05 08:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-05 08:47:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
