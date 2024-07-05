@@ -9,28 +9,104 @@
     <title>login</title>
 </head>
 
-<body class="flex items-center justify-center h-screen bg-gray-100">
-    <div class="w-full max-w-xs">
-        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+<body class="bg-gray-100">
+    <!-- navber -->
+    <nav class="bg-white shadow-md py-6">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-700 text-lg">logo</span>
+                        </a>
+                    </div>
+                    <!-- navber links -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
+                        <a href="#" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
+                        <a href="#" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
+                    </div>
+                </div>
+                <!-- Register & login button -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
+                    <a href="login_Marketplace_form.php" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-gray-600" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden">
+        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Promotion</a>
+        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Category</a>
+        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Trending</a>
+        <div class="flex justify-center space-x-4 mt-4">
+            <button class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</button>
+            <button class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</button>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="flex justify-center items-center h-screen">
+            <div class="text-center">
+                <a href=""></a>
+                <h1 class="text-4xl font-bold text-gray-900 mb-6">Hello World</h1>
+                <p class="text-lg text-gray-700">Hello World</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+    <!-- Register Form -->
+    <!-- <form id="registerForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                    username
+                    Username
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="username">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="regUsername" type="text" placeholder="Username">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    Email
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="regEmail" type="email" placeholder="Email">
             </div>
             <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                    password
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="regPassword">
+                    Password
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="password">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="regPassword" type="password" placeholder="Password">
             </div>
             <div class="flex items-center justify-between">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                    login
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="register()">
+                    Register
                 </button>
             </div>
-        </form>
-    </div>
+        </form> -->
+
+
+
+
 
     <script>
         function login() {
