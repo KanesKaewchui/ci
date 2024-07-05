@@ -59,12 +59,37 @@
 
     <!-- Content -->
     <div class="max-w-7xl mx-auto px-4 py-12">
-        <div class="flex justify-center items-center h-screen">
-            <div class="text-center">
-                <a href=""></a>
-                <h1 class="text-4xl font-bold text-gray-900 mb-6">Hello World</h1>
-                <p class="text-lg text-gray-700">Hello World</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="text-center shadow-lg p-4 bg-white rounded-lg">
+                <a href="#">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                    <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
+                    <p class="text-base text-gray-700">DCounter-Strike 2</p>
+                </a>
             </div>
+            <div class="text-center shadow-lg p-4 bg-white rounded-lg">
+                <a href="#">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                    <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
+                    <p class="text-base text-gray-700">DCounter-Strike 2</p>
+                </a>
+            </div>
+            <div class="text-center shadow-lg p-4 bg-white rounded-lg">
+                <a href="#">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                    <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
+                    <p class="text-base text-gray-700">DCounter-Strike 2</p>
+                </a>
+            </div>
+            <div class="text-center shadow-lg p-4 bg-white rounded-lg">
+                <a href="#">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                    <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
+                    <p class="text-base text-gray-700">DCounter-Strike 2</p>
+                </a>
+            </div>
+
+
         </div>
     </div>
     <script>

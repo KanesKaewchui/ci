@@ -49,4 +49,8 @@ class Marketplace_Contoller extends Controller
             return view('Marketplace_views');
         }
     }
+
+    public function login()
+    {
+    }
 }
