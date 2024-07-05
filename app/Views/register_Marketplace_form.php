@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>register</title>
 </head>
 
@@ -31,7 +32,7 @@
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="regPassword" type="password" name="password" placeholder="Password">
             </div>
             <div class="flex items-center justify-between">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="register()">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" onclick="register()">
                     Register
                 </button>
             </div>
@@ -39,32 +40,47 @@
     </div>
 
     <script>
-        function register() {
-            const formData = new FormData(document.getElementById('registerForm'));
+        $('#registerForm').submit(function(e) {
+            e.preventDefault();
 
-            fetch('<?php echo site_url('MarketplaceController/register'); ?>', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.text())
-                .then(data => {
+            $.ajax({
+                url: '<?php echo base_url('MarketplaceController/register'); ?>',
+                type: 'POST',
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function(data) {
+                    if (data.status === 'success') {
+                        Swal.fire({
+                            title: 'Registration Status',
+                            html: 'Registration successful<br>' +
+                                'Username: ' + data.Username + '<br>' +
+                                'Email: ' + data.Email + '<br>' +
+                                'Created Time: ' + data.created_at,
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Registration Status',
+                            text: data.message,
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
                     Swal.fire({
                         title: 'Registration Status',
-                        text: data,
-                        icon: 'info',
-                        confirmButtonText: 'OK'
-                    });
-                })
-                .catch(error => {
-                    Swal.fire({
-                        title: 'Error',
-                        text: 'An error occurred: ' + error,
+                        text: 'An error occurred while processing your request.',
                         icon: 'error',
                         confirmButtonText: 'OK'
                     });
-                });
-        }
+                }
+            });
+        });
     </script>
+
 </body>
 
 </html>

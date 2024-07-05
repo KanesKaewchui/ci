@@ -40,6 +40,7 @@ class MarketplaceController extends Controller
 
             if ($query) {
                 $response = [
+                    'status' => 'success',
                     'message' => 'Registration successful',
                     'Username' => $username,
                     'Email' => $email,
@@ -49,7 +50,7 @@ class MarketplaceController extends Controller
             } else {
                 $response = [
                     'status' => 'error',
-                    'message' => 'Error: '. $this->mydev_model->db_group_name->error();
+                    'message' => 'Error: ' . $this->mydev_model->db_group_name->error(),
 
                 ];
             }
