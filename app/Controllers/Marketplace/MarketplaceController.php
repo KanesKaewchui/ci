@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Marketplace;
 
 use App\Models\Mydev_model;
 use App\Libraries\aescrypt;
@@ -24,7 +24,7 @@ class MarketplaceController extends Controller
 
     public function index()
     {
-        return view('Marketplace_views');
+        return view('Marketplace/Marketplace_views');
     }
 
     public function register()
@@ -57,17 +57,17 @@ class MarketplaceController extends Controller
             header('Content-Type: application/json');
             echo json_encode($response);
         } else {
-            return view('register_Marketplace_form');
+            return view('Marketplace/Register_forms');
         }
     }
 
     public function login()
     {
-        return view('login_Marketplace_form');
+        return view('Marketplace/Login_form');
     }
 
     public function promotion()
     {
-        return view('promotion_Marketplace_page');
+        return view('Marketplace/Promotion');
     }
 }

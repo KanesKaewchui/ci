@@ -30,7 +30,7 @@
                 </div>
                 <!-- Register & login button -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="<?php echo site_url('MarketplaceController/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
+                    <a href="<?php echo site_url('Marketplace/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
                     <a href="<?php echo site_url('MarketplaceController/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
                 </div>
                 <!-- Mobile menu button -->
@@ -52,7 +52,7 @@
         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Category</a>
         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Trending</a>
         <div class="flex justify-center space-x-4 mt-4">
-            <a href="<?php echo site_url('MarketplaceController/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
+            <a href="<?php echo site_url('Marketplace/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
             <a href="<?php echo site_url('MarketplaceController/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
         </div>
     </div>

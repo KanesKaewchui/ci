@@ -1,0 +1,68 @@
+INFO - 2024-07-06 08:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 08:28:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 08:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 08:28:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 08:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 08:28:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 08:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 08:28:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 08:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 08:28:48 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 13:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 13:46:33 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-06 13:46:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Marketplace_views.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Marketplace_views.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace_views', [], true)
+ 3 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace_views')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-06 13:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 13:47:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-06 13:47:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Marketplace_views.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Marketplace_views.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace_views', [], true)
+ 3 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace_views')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-main\\ci\\public\\index.php')
+INFO - 2024-07-06 13:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 13:55:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 13:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 13:55:35 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 14:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 14:29:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 14:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 14:29:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 14:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 14:33:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 14:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 14:33:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 14:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 14:33:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 14:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 14:34:03 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 14:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 14:35:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 14:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 14:35:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 15:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 15:24:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 15:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 15:24:41 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 15:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 15:27:25 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 15:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 15:28:22 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 15:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 15:28:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 15:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 15:28:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-06 15:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-06 15:28:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();

@@ -29,3 +29,11 @@ $routes->group('admin', function ($routes) {
     $routes->get('delete_movie/(:segment)', 'Admin::delete_movie/$1', ['filter' => 'authGuard']);
     $routes->match(['get', 'post'], 'add_movie', 'Admin::add_movie', ['filter' => 'authGuard']);
 });
+
+$routes->group('marketplace', ['namespace' => 'App\Controllers\Marketplace'], function($routes) {
+    $routes->get('/', 'MarketplaceController::index');
+    $routes->match(['get', 'post'], 'register', 'MarketplaceController::register');
+    $routes->get('login', 'MarketplaceController::login');
+    $routes->get('promotion', 'MarketplaceController::promotion');
+});
+
