@@ -57,17 +57,27 @@ class MarketplaceController extends Controller
             header('Content-Type: application/json');
             echo json_encode($response);
         } else {
-            return view('Marketplace/Register_forms');
+            return view('Marketplace/register');
         }
     }
 
     public function login()
     {
-        return view('Marketplace/Login_form');
+        return view('Marketplace/login');
     }
 
     public function promotion()
     {
-        return view('Marketplace/Promotion');
+        return view('Marketplace/promotion');
+    }
+
+    public function category()
+    {
+        return view('Marketplace/category');
+    }
+
+    public function trending()
+    {
+        return view('marketplace/trending');
     }
 }

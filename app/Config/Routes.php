@@ -31,9 +31,11 @@ $routes->group('admin', function ($routes) {
 });
 
 $routes->group('marketplace', ['namespace' => 'App\Controllers\Marketplace'], function($routes) {
-    $routes->get('/', 'MarketplaceController::index');
-    $routes->match(['get', 'post'], 'register', 'MarketplaceController::register');
+    $routes->get('index', 'MarketplaceController::index');
+    $routes->match(['get', 'post'], 'register', 'MarketplaceController::register'); 
     $routes->get('login', 'MarketplaceController::login');
     $routes->get('promotion', 'MarketplaceController::promotion');
+    $routes->get('category', 'MarketplaceController::category');
+    $routes->get('trending', 'MarketplaceController::trending');
 });
 

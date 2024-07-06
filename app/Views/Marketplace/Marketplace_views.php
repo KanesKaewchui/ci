@@ -17,21 +17,21 @@
                 <div class="flex space-x-4">
                     <!-- logo -->
                     <div>
-                        <a href="#" class="flex items-center py-4 px-2">
+                        <a href="<?php echo site_url('marketplace/index'); ?>" class="flex items-center py-4 px-2">
                             <span class="font-semibold text-gray-700 text-lg">logo</span>
                         </a>
                     </div>
                     <!-- navber links -->
                     <div class="hidden md:flex items-center space-x-1">
-                        <a href="promotion_Marketplace_page.php" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
-                        <a href="#" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
-                        <a href="#" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
+                        <a href="<?php echo site_url('marketplace/promotion');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
+                        <a href="<?php echo site_url('marketplace/category');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
+                        <a href="<?php echo site_url('marketplace/trending');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
                     </div>
                 </div>
                 <!-- Register & login button -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="<?php echo site_url('Marketplace/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
-                    <a href="<?php echo site_url('MarketplaceController/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
+                    <a href="<?php echo site_url('marketplace/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
+                    <a href="<?php echo site_url('marketplace/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
@@ -52,8 +52,8 @@
         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Category</a>
         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Trending</a>
         <div class="flex justify-center space-x-4 mt-4">
-            <a href="<?php echo site_url('Marketplace/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
-            <a href="<?php echo site_url('MarketplaceController/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
+            <a href="<?php echo site_url('marketplace/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
+            <a href="<?php echo site_url('marketplace/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
         </div>
     </div>
 
