@@ -48,9 +48,9 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu hidden md:hidden">
-        <a href="promotion_Marketplace_page.php" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Promotion</a>
-        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Category</a>
-        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Trending</a>
+        <a href="<?php echo site_url('marketplace/promotion');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
+        <a href="<?php echo site_url('marketplace/category');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
+        <a href="<?php echo site_url('marketplace/trending');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
         <div class="flex justify-center space-x-4 mt-4">
             <a href="<?php echo site_url('marketplace/register'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Register</a>
             <a href="<?php echo site_url('marketplace/login'); ?>" class="py-2 px-4 text-gray-700 border rounded hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300">Login</a>
@@ -61,37 +61,37 @@
     <div class="max-w-7xl mx-auto px-4 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                <a href="#">
+                <a href="<?php echo site_url('marketplace/itemdetails'); ?>">
                     <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
                     <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
                     <p class="text-base text-gray-700">DCounter-Strike 2</p>
                 </a>
             </div>
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                <a href="#">
+            <a href="<?php echo site_url('marketplace/itemdetails'); ?>">
                     <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
                     <h1 class="text-lg font-bold text-gray-900 mb-6">Kilowatt Case</h1>
                     <p class="text-base text-gray-700">DCounter-Strike 2</p>
                 </a>
             </div>
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                <a href="#">
+            <a href="<?php echo site_url('mmarketplace/itemdetails'); ?>">
                     <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
                     <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
                     <p class="text-base text-gray-700">DCounter-Strike 2</p>
                 </a>
             </div>
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                <a href="#">
+            <a href="<?php echo site_url('marketplace/itemdetails'); ?>">
                     <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
                     <h1 class="text-lg font-bold text-gray-900 mb-6">Kilowatt Case</h1>
                     <p class="text-base text-gray-700">DCounter-Strike 2</p>
                 </a>
             </div>
-
-
         </div>
     </div>
+
+    <!-- Script mobile menu -->
     <script>
         const mobileMenuButton = document.querySelector('.mobile-menu-button');
         const mobileMenu = document.querySelector('.mobile-menu');
@@ -101,7 +101,7 @@
         });
     </script>
 
-
+<!-- Script login  -->
     <script>
         function login() {
             const username = document.getElementById('username').value;

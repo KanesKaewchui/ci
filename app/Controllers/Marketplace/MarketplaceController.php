@@ -80,4 +80,8 @@ class MarketplaceController extends Controller
     {
         return view('marketplace/trending');
     }
+
+    public function itemdetails() : Returntype {
+        
+    }
 }
