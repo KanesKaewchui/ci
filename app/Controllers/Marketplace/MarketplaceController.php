@@ -81,7 +81,7 @@ class MarketplaceController extends Controller
         return view('marketplace/trending');
     }
 
-    public function itemdetails() : Returntype {
-        
+    public function itemdetails($id) {
+        $data['item'] = $this->Itme
     }
 }
