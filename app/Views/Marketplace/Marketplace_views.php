@@ -64,12 +64,12 @@
             <?php if (!empty($items)) : ?>
                 <?php foreach ($items as $item) : ?>
                     <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                        <a href="<?php echo site_url('marketplace/itemdetails/' . $item['id']); ?>">
-                            <img src="<?php echo $item['image_url']; ?>" alt="<?php echo $item['name']; ?>" class="w-full h-auto mb-4 rounded">
-                            <h1 class="text-lg font-bold text-gray-900 mb-6"><?php echo $item['name']; ?></h1>
-                            <p class="text-base text-gray-700"><?php echo $item['description']; ?></p>
-                            <span class="text-gray-900 font-bold">$<?php echo $item['promotion_price']; ?></span>
-                            <span class="text-gray-600 line-through">$<?php echo $item['price']; ?></span>
+                        <a href="<?php echo site_url('marketplace/itemdetails/' . $item->id); ?>"> <!-- แก้ไขการเข้าถึง property ของ object -->
+                            <img src="<?php echo $item->image_url; ?>" alt="<?php echo $item->name; ?>" class="w-full h-auto mb-4 rounded">
+                            <h1 class="text-lg font-bold text-gray-900 mb-6"><?php echo $item->name; ?></h1>
+                            <p class="text-base text-gray-700"><?php echo $item->description; ?></p>
+                            <span class="text-gray-900 font-bold">$<?php echo $item->promotion_price; ?></span>
+                            <span class="text-gray-600 line-through">$<?php echo $item->price; ?></span>
                         </a>
                     </div>
                 <?php endforeach; ?>

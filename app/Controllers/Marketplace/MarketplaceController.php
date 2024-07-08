@@ -24,7 +24,18 @@ class MarketplaceController extends Controller
 
     public function index()
     {
-        return view('Marketplace/Marketplace_views');
+        $sql = 'SELECT * FROM items WHERE promotion_price';
+        $items = $this->mydev_model->select($sql);
+
+        $data['items'] = $items;
+
+        // if (!empty($items)) {
+        //     $data['items'] = $items;
+        // } else {
+        //     $data['items'] = [];
+        // }
+
+        return view('Marketplace/Marketplace_views', $data);
     }
 
     public function register()
@@ -77,15 +88,21 @@ class MarketplaceController extends Controller
 
     public function itemdetails($id)
     {
-        $_GET
+        // $id = $this->request->getVar('id');
+
+        if (!$id) {
+            echo "No item ID provided";
+            return;
+        }
 
         $sql = 'SELECT * FROM items WHERE id = ?';
-        $query = $this->mydev_model->select_binding($sql, [$id]);
-        print_r($query);
-        die;
+        $query = $this->mydev_model->select($sql);
+
         if (!empty($query)) {
             $item = $query[0];
-            $data['item'] = $item;
+            $itemarr = json_decode(json_encode($item), true);
+
+            $data['item'] = $itemarr;
             return view('Marketplace/itemdetails', $data);
         } else {
             echo "Item not found";
