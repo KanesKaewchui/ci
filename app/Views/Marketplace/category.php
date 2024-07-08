@@ -22,9 +22,9 @@
                     </div>
                     <!-- Navbar links -->
                     <div class="hidden md:flex items-center space-x-1">
-                    <a href="<?php echo site_url('marketplace/promotion');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
-                        <a href="<?php echo site_url('marketplace/category');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
-                        <a href="<?php echo site_url('marketplace/trending');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
+                        <a href="<?php echo site_url('marketplace/promotion'); ?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
+                        <a href="<?php echo site_url('marketplace/category'); ?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
+                        <a href="<?php echo site_url('marketplace/trending'); ?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
                     </div>
                 </div>
                 <!-- Register & login buttons -->
@@ -65,28 +65,28 @@
             <!-- Category 1 -->
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://via.placeholder.com/360" alt="Category 1" class="w-full h-auto mb-4 rounded">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Category 1" class="w-full h-auto mb-4 rounded">
                     <h2 class="text-lg font-bold text-gray-900 mb-2">Category 1</h2>
                 </a>
             </div>
             <!-- Category 2 -->
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://via.placeholder.com/360" alt="Category 2" class="w-full h-auto mb-4 rounded">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Category 2" class="w-full h-auto mb-4 rounded">
                     <h2 class="text-lg font-bold text-gray-900 mb-2">Category 2</h2>
                 </a>
             </div>
             <!-- Category 3 -->
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://via.placeholder.com/360" alt="Category 3" class="w-full h-auto mb-4 rounded">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Category 3" class="w-full h-auto mb-4 rounded">
                     <h2 class="text-lg font-bold text-gray-900 mb-2">Category 3</h2>
                 </a>
             </div>
             <!-- Category 4 -->
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://via.placeholder.com/360" alt="Category 4" class="w-full h-auto mb-4 rounded">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Category 4" class="w-full h-auto mb-4 rounded">
                     <h2 class="text-lg font-bold text-gray-900 mb-2">Category 4</h2>
                 </a>
             </div>

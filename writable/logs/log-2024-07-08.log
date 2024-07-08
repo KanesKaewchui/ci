@@ -1,0 +1,92 @@
+CRITICAL - 2024-07-08 02:16:39 --> ParseError: syntax error, unexpected token "}"
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 86.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Marketplace\\MarketplaceController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Marketplace\\MarketplaceController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Marketplace\\MarketplaceController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Marketplace\\MarketplaceController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 04:30:05 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 04:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:30:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 04:30:28 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 04:35:02 --> ParseError: syntax error, unexpected token "return"
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 92.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Marketplace\\MarketplaceController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Marketplace\\MarketplaceController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Marketplace\\MarketplaceController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Marketplace\\MarketplaceController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 04:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:35:20 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 04:35:20 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 04:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:35:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 04:35:32 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 04:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:35:33 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 04:35:33 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 04:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:37:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 04:37:23 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 04:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:37:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 04:37:24 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 04:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:44:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 04:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:44:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 04:44:23 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 04:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:47:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 04:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:47:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 04:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:47:47 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 04:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:55:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 04:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 04:55:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();

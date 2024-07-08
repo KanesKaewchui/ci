@@ -81,7 +81,17 @@ class MarketplaceController extends Controller
         return view('marketplace/trending');
     }
 
-    public function itemdetails($id) {
-        $data['item'] = $this->Itme
+    public function itemdetails($id)
+    {
+        $sql = 'SELECT * FROM items WHERE id = ?';
+        $query = $this->mydev_model->select_binding($sql, [$id]);
+
+        if (!empty($query)) {
+            $item = $query[0];
+            $data['item'] = $item;
+            return view('Marketplace/itemdetails', $data);
+        } else {
+            show_404();
+        }
     }
 }

@@ -15,12 +15,12 @@
             <div class="flex flex-col md:flex-row">
                 <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full md:w-1/3 h-auto mb-4 md:mb-0 rounded">
                 <div class="md:ml-6">
-                    <h1 class="text-2xl font-bold text-gray-900 mb-4">Box Dreams & Nightmares</h1>
-                    <p class="text-lg text-gray-700 mb-4">Counter-Strike 2</p>
-                    <p class="text-lg text-gray-700 mb-4">Seller: John Doe</p>
-                    <p class="text-lg text-gray-700 mb-4">Price: $20.00</p>
-                    <p class="text-lg text-gray-700 mb-4">Total Items: 10</p>
-                    <p class="text-lg text-gray-700 mb-4">Promotion Price: $18.00</p>
+                    <h1 class="text-2xl font-bold text-gray-900 mb-4"><?php echo $item['name']; ?></h1>
+                    <p class="text-lg text-gray-700 mb-4"><?php echo $item['description']; ?></p>
+                    <p class="text-lg text-gray-700 mb-4">Seller: <?php echo $item['seller']; ?></p>
+                    <p class="text-lg text-gray-700 mb-4">Price: $<?php echo $item['price']; ?></p>
+                    <p class="text-lg text-gray-700 mb-4">Total Items: <?php echo $item['total_items']; ?></p>
+                    <p class="text-lg text-gray-700 mb-4">Promotion Price: $<?php echo $item['promotion_price']; ?></p>
                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="buyItem()">
                         Buy Now
                     </button>
@@ -41,4 +41,3 @@
 </body>
 
 </html>
-

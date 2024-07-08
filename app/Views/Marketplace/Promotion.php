@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Promotion</title>
 </head>
+
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-white shadow-md py-6">
+    <nav class="bg-gray-900 shadow-md py-6">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between">
                 <div class="flex space-x-4">
@@ -21,9 +23,9 @@
                     </div>
                     <!-- Navbar links -->
                     <div class="hidden md:flex items-center space-x-1">
-                        <a href="<?php echo site_url('marketplace/promotion');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
-                        <a href="<?php echo site_url('marketplace/category');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
-                        <a href="<?php echo site_url('marketplace/trending');?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
+                        <a href="<?php echo site_url('marketplace/promotion'); ?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Promotion</a>
+                        <a href="<?php echo site_url('marketplace/category'); ?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Category</a>
+                        <a href="<?php echo site_url('marketplace/trending'); ?>" class="py-4 px-2 text-gray-700 hover:text-gray-900">Trending</a>
                     </div>
                 </div>
                 <!-- Register & Login buttons -->
@@ -60,7 +62,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Promotion Card 1 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/300" alt="Promotion Image" class="w-full h-48 object-cover">
+                <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Promotion Image" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold text-gray-800">Promotion Title 1</h2>
                     <p class="text-gray-600 mt-2">Description of the promotion goes here. It should be brief and to the point.</p>
@@ -74,7 +76,7 @@
 
             <!-- Promotion Card 2 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/300" alt="Promotion Image" class="w-full h-48 object-cover">
+                <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Promotion Image" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold text-gray-800">Promotion Title 2</h2>
                     <p class="text-gray-600 mt-2">Description of the promotion goes here. It should be brief and to the point.</p>
@@ -88,7 +90,7 @@
 
             <!-- Promotion Card 3 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/300" alt="Promotion Image" class="w-full h-48 object-cover">
+                <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Promotion Image" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold text-gray-800">Promotion Title 3</h2>
                     <p class="text-gray-600 mt-2">Description of the promotion goes here. It should be brief and to the point.</p>
@@ -111,4 +113,5 @@
         });
     </script>
 </body>
+
 </html>

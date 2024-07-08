@@ -30,12 +30,12 @@ $routes->group('admin', function ($routes) {
     $routes->match(['get', 'post'], 'add_movie', 'Admin::add_movie', ['filter' => 'authGuard']);
 });
 
-$routes->group('marketplace', ['namespace' => 'App\Controllers\Marketplace'], function($routes) {
+$routes->group('marketplace', ['namespace' => 'App\Controllers\Marketplace'], function ($routes) {
     $routes->get('index', 'MarketplaceController::index');
-    $routes->match(['get', 'post'], 'register', 'MarketplaceController::register'); 
+    $routes->match(['get', 'post'], 'register', 'MarketplaceController::register');
     $routes->get('login', 'MarketplaceController::login');
     $routes->get('promotion', 'MarketplaceController::promotion');
     $routes->get('category', 'MarketplaceController::category');
     $routes->get('trending', 'MarketplaceController::trending');
+    $routes->get('marketplace/itemdetails/(:num)', 'Marketplace\MarketplaceController::itemdetails/$1');
 });
-

@@ -65,7 +65,7 @@
             <!-- Trending Item 1 -->
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://via.placeholder.com/360" alt="Trending Item 1" class="w-full h-auto mb-4 rounded">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Trending Item 1" class="w-full h-auto mb-4 rounded">
                     <h2 class="text-lg font-bold text-gray-900 mb-2">Trending Item 1</h2>
                     <p class="text-gray-700">$29.99</p>
                 </a>
@@ -73,7 +73,7 @@
             <!-- Trending Item 2 -->
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://via.placeholder.com/360" alt="Trending Item 2" class="w-full h-auto mb-4 rounded">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Trending Item 2" class="w-full h-auto mb-4 rounded">
                     <h2 class="text-lg font-bold text-gray-900 mb-2">Trending Item 2</h2>
                     <p class="text-gray-700">$39.99</p>
                 </a>
@@ -81,7 +81,7 @@
             <!-- Trending Item 3 -->
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://via.placeholder.com/360" alt="Trending Item 3" class="w-full h-auto mb-4 rounded">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Trending Item 3" class="w-full h-auto mb-4 rounded">
                     <h2 class="text-lg font-bold text-gray-900 mb-2">Trending Item 3</h2>
                     <p class="text-gray-700">$49.99</p>
                 </a>
@@ -89,7 +89,7 @@
             <!-- Trending Item 4 -->
             <div class="text-center shadow-lg p-4 bg-white rounded-lg">
                 <a href="#">
-                    <img src="https://via.placeholder.com/360" alt="Trending Item 4" class="w-full h-auto mb-4 rounded">
+                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Trending Item 4" class="w-full h-auto mb-4 rounded">
                     <h2 class="text-lg font-bold text-gray-900 mb-2">Trending Item 4</h2>
                     <p class="text-gray-700">$59.99</p>
                 </a>
