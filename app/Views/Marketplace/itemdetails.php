@@ -20,7 +20,7 @@
                         <p class="text-lg text-gray-700 mb-4"><?php echo $item['description']; ?></p>
                         <p class="text-lg text-gray-700 mb-4">Seller: <?php echo $item['seller']; ?></p>
                         <p class="text-lg text-gray-700 mb-4">Price: $<?php echo $item['price']; ?></p>
-                        <p class="text-lg text-gray-700 mb-4">Total Items: <?php echo $item['total_items']; ?></p>
+                        <p class="text-lg text-gray-700 mb-4">Total Items: <span id="total-items"><?php echo $item['total_items']; ?></span></p>
                         <p class="text-lg text-gray-700 mb-4">Promotion Price: $<?php echo $item['promotion_price']; ?></p>
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="buyItem()">
                             Buy Now
@@ -35,13 +35,43 @@
 
     <script>
         function buyItem() {
-            Swal.fire({
-                icon: 'success',
-                title: 'Purchase Successful',
-                text: 'You have successfully purchased the item!',
-            });
+
+            let totalItemsElement = document.getElementById('total-items');
+            let totalItems = parseInt(totalItemsElement.textContent);
+            if (totalItems > 0) {
+                Swal.fire({
+                    title: 'Confirm Purchase',
+                    text: 'Are you sure you want to purchase this item?',
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, Buy it!',
+                    cancelButtonText: 'Cancel'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        totalItems--;
+                        totalItemsElement.textContent = totalItems;
+
+
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Purchase Successful',
+                            text: 'You have successfully purchased the item!',
+                        });
+                    }
+                });
+            } else {
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Out of Stock',
+                    text: 'This item is currently out of stock!',
+                });
+            }
         }
     </script>
+
+
+
 </body>
 
 </html>
