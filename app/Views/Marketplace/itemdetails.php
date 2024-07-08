@@ -12,20 +12,24 @@
 <body class="bg-gray-100">
     <div class="container mx-auto p-6">
         <div class="bg-white shadow-lg rounded-lg p-6">
-            <div class="flex flex-col md:flex-row">
-                <img src="<?php echo $item['image_url']; ?>" alt="Image 1" class="w-full md:w-1/3 h-auto mb-4 md:mb-0 rounded">
-                <div class="md:ml-6">
-                    <h1 class="text-2xl font-bold text-gray-900 mb-4"><?php echo $item['name']; ?></h1>
-                    <p class="text-lg text-gray-700 mb-4"><?php echo $item['description']; ?></p>
-                    <p class="text-lg text-gray-700 mb-4">Seller: <?php echo $item['seller']; ?></p>
-                    <p class="text-lg text-gray-700 mb-4">Price: $<?php echo $item['price']; ?></p>
-                    <p class="text-lg text-gray-700 mb-4">Total Items: <?php echo $item['total_items']; ?></p>
-                    <p class="text-lg text-gray-700 mb-4">Promotion Price: $<?php echo $item['promotion_price']; ?></p>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="buyItem()">
-                        Buy Now
-                    </button>
+            <?php if (!empty($item)) : ?>
+                <div class="flex flex-col md:flex-row">
+                    <img src="<?php echo $item['image_url']; ?>" alt="Item Image" class="w-full md:w-1/3 h-auto mb-4 md:mb-0 rounded">
+                    <div class="md:ml-6">
+                        <h1 class="text-2xl font-bold text-gray-900 mb-4"><?php echo $item['name']; ?></h1>
+                        <p class="text-lg text-gray-700 mb-4"><?php echo $item['description']; ?></p>
+                        <p class="text-lg text-gray-700 mb-4">Seller: <?php echo $item['seller']; ?></p>
+                        <p class="text-lg text-gray-700 mb-4">Price: $<?php echo $item['price']; ?></p>
+                        <p class="text-lg text-gray-700 mb-4">Total Items: <?php echo $item['total_items']; ?></p>
+                        <p class="text-lg text-gray-700 mb-4">Promotion Price: $<?php echo $item['promotion_price']; ?></p>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="buyItem()">
+                            Buy Now
+                        </button>
+                    </div>
                 </div>
-            </div>
+            <?php else : ?>
+                <p class="text-center text-gray-700">Item not found</p>
+            <?php endif; ?>
         </div>
     </div>
 

@@ -29,12 +29,6 @@ class MarketplaceController extends Controller
 
         $data['items'] = $items;
 
-        // if (!empty($items)) {
-        //     $data['items'] = $items;
-        // } else {
-        //     $data['items'] = [];
-        // }
-
         return view('Marketplace/Marketplace_views', $data);
     }
 
@@ -74,6 +68,23 @@ class MarketplaceController extends Controller
 
     public function login()
     {
+        if ($this->request->getMethod() == 'post') {
+            $username = $this->request->getPost('username');
+            $password = $this->request->getPost('password');
+
+            $sql = "SELECT * FROM register WHERE username = ? AND password = ?";
+            $query = $this->mydev_model->select_binding($sql, [$username, $password]);
+
+            if (count($query) > 0) {
+                $id = $query[0]->id;
+                $this->session->set("id", $id);
+
+                $data['data_id'] = $query;
+                return view('Marketplace/login', $data);
+            } else {
+                return view('Marketplace/login');
+            }
+        }
         return view('Marketplace/login');
     }
 
@@ -88,15 +99,13 @@ class MarketplaceController extends Controller
 
     public function itemdetails($id)
     {
-        // $id = $this->request->getVar('id');
-
         if (!$id) {
             echo "No item ID provided";
             return;
         }
 
         $sql = 'SELECT * FROM items WHERE id = ?';
-        $query = $this->mydev_model->select($sql);
+        $query = $this->mydev_model->select_binding($sql, [$id]);
 
         if (!empty($query)) {
             $item = $query[0];
