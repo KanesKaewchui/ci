@@ -37,5 +37,6 @@ $routes->group('marketplace', ['namespace' => 'App\Controllers\Marketplace'], fu
     $routes->get('promotion', 'MarketplaceController::promotion');
     $routes->get('category', 'MarketplaceController::category');
     $routes->get('trending', 'MarketplaceController::trending');
-    $routes->get('marketplace/itemdetails/(:num)', 'Marketplace\MarketplaceController::itemdetails/$1');
+    $routes->get('itemdetails', 'MarketplaceController::itemdetails');
+    // $routes->get('itemdetails/(:num)', 'MarketplaceController::itemdetails/$1');
 });

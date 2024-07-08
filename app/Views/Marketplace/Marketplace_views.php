@@ -61,38 +61,45 @@
     <div class="max-w-7xl mx-auto px-4 py-12">
         <h1 class="text-lg font-bold text-gray-900 mb-6">Promotion</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                <a href="<?php echo site_url('marketplace/itemdetails'); ?>">
-                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
-                    <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
-                    <p class="text-base text-gray-700">DCounter-Strike 2</p>
-                    <span class="text-gray-900 font-bold">$10.00</span>
-                    <span class="text-gray-600 line-through">$20.00</span>
-                </a>
-            </div>
-            <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                <a href="<?php echo site_url('marketplace/itemdetails'); ?>">
-                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
-                    <h1 class="text-lg font-bold text-gray-900 mb-6">Kilowatt Case</h1>
-                    <p class="text-base text-gray-700">DCounter-Strike 2</p>
-                </a>
-            </div>
-            <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                <a href="<?php echo site_url('mmarketplace/itemdetails'); ?>">
-                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
-                    <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
-                    <p class="text-base text-gray-700">DCounter-Strike 2</p>
-                </a>
-            </div>
-            <div class="text-center shadow-lg p-4 bg-white rounded-lg">
-                <a href="<?php echo site_url('marketplace/itemdetails'); ?>">
-                    <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
-                    <h1 class="text-lg font-bold text-gray-900 mb-6">Kilowatt Case</h1>
-                    <p class="text-base text-gray-700">DCounter-Strike 2</p>
-                </a>
-            </div>
-            <h1 class="text-lg font-bold text-gray-900 mb-6">Trending</h1>
+            <?php if (!empty($items)) : ?>
+                <?php foreach ($items as $item) : ?>
+                    <div class="text-center shadow-lg p-4 bg-white rounded-lg">
+                        <a href="<?php echo site_url('marketplace/itemdetails/' . $item['id']); ?>">
+                            <img src="<?php echo $item['image_url']; ?>" alt="<?php echo $item['name']; ?>" class="w-full h-auto mb-4 rounded">
+                            <h1 class="text-lg font-bold text-gray-900 mb-6"><?php echo $item['name']; ?></h1>
+                            <p class="text-base text-gray-700"><?php echo $item['description']; ?></p>
+                            <span class="text-gray-900 font-bold">$<?php echo $item['promotion_price']; ?></span>
+                            <span class="text-gray-600 line-through">$<?php echo $item['price']; ?></span>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <p class="text-center text-gray-700">No promotion items found.</p>
+            <?php endif; ?>
         </div>
+        <div class="text-center shadow-lg p-4 bg-white rounded-lg">
+            <a href="<?php echo site_url('marketplace/itemdetails'); ?>">
+                <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                <h1 class="text-lg font-bold text-gray-900 mb-6">Kilowatt Case</h1>
+                <p class="text-base text-gray-700">DCounter-Strike 2</p>
+            </a>
+        </div>
+        <div class="text-center shadow-lg p-4 bg-white rounded-lg">
+            <a href="<?php echo site_url('mmarketplace/itemdetails'); ?>">
+                <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQwnfCcJmxDv9rhwIHZwqP3a-uGwz9Xv8F0j-qQrI3xiVLkrxVuZW-mJoWLMlhpWhFkc9M/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                <h1 class="text-lg font-bold text-gray-900 mb-6">Box Dreams & Nightmares</h1>
+                <p class="text-base text-gray-700">DCounter-Strike 2</p>
+            </a>
+        </div>
+        <div class="text-center shadow-lg p-4 bg-white rounded-lg">
+            <a href="<?php echo site_url('marketplace/itemdetails'); ?>">
+                <img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFQznaKdID5D6d23ldHSwKOmZeyEz21XvZZ12LzE9t6nigbgqkplNjihJIaLMlhpF1ZeR5c/360fx360f" alt="Image 1" class="w-full h-auto mb-4 rounded">
+                <h1 class="text-lg font-bold text-gray-900 mb-6">Kilowatt Case</h1>
+                <p class="text-base text-gray-700">DCounter-Strike 2</p>
+            </a>
+        </div>
+        <h1 class="text-lg font-bold text-gray-900 mb-6">Trending</h1>
+    </div>
     </div>
 
     <!-- Script mobile menu -->

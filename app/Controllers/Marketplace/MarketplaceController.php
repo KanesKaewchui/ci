@@ -68,7 +68,28 @@ class MarketplaceController extends Controller
 
     public function promotion()
     {
-        return view('Marketplace/promotion');
+        $sql = 'SELECT * FROM items WHERE promotion_price > 0';
+        $query = $this->mydev_model->select($sql);
+
+        $data['items'] = $query ? $query : [];
+        return view('Marketplace_views', $data);
+    }
+
+    public function itemdetails($id)
+    {
+        $_GET
+
+        $sql = 'SELECT * FROM items WHERE id = ?';
+        $query = $this->mydev_model->select_binding($sql, [$id]);
+        print_r($query);
+        die;
+        if (!empty($query)) {
+            $item = $query[0];
+            $data['item'] = $item;
+            return view('Marketplace/itemdetails', $data);
+        } else {
+            echo "Item not found";
+        }
     }
 
     public function category()
@@ -79,19 +100,5 @@ class MarketplaceController extends Controller
     public function trending()
     {
         return view('marketplace/trending');
-    }
-
-    public function itemdetails($id)
-    {
-        $sql = 'SELECT * FROM items WHERE id = ?';
-        $query = $this->mydev_model->select_binding($sql, [$id]);
-
-        if (!empty($query)) {
-            $item = $query[0];
-            $data['item'] = $item;
-            return view('Marketplace/itemdetails', $data);
-        } else {
-            show_404();
-        }
     }
 }

@@ -90,3 +90,332 @@ INFO - 2024-07-08 04:55:15 --> Session: Class initialized using 'CodeIgniter\Ses
 WARNING - 2024-07-08 04:55:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
 INFO - 2024-07-08 04:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 WARNING - 2024-07-08 04:55:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 05:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:05:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:05:28 --> ErrorException: Undefined variable $item
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 65.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:05:31 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:05:31 --> ErrorException: Undefined variable $item
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 65.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:05:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:05:34 --> ErrorException: Undefined variable $item
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 65.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:37:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:37:07 --> ErrorException: Undefined variable $item
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 65.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:37:09 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:37:09 --> ErrorException: Undefined variable $item
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 65.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:49:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:49:17 --> ErrorException: Undefined variable $items
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 64.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:49:48 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:49:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Marketplace_views.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Marketplace_views.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace_views', [], true)
+ 3 APPPATH\Controllers\Marketplace\MarketplaceController.php(74): view('Marketplace_views', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->promotion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:49:53 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:49:53 --> ErrorException: Undefined variable $items
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 64.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:49:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:49:58 --> ErrorException: Undefined variable $items
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 64.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:51:20 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:51:20 --> ErrorException: Undefined variable $items
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 64.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:51:21 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:51:21 --> ErrorException: Undefined variable $items
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 64.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 05:51:37 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 89.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci\\app\\Controllers\\Marketplace\\MarketplaceController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Marketplace\\MarketplaceController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Marketplace\\MarketplaceController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Marketplace\\MarketplaceController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 05:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 05:51:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 05:51:45 --> ErrorException: Undefined variable $items
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 64.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:03:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 06:03:52 --> ErrorException: Undefined variable $items
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 64.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:03:53 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 06:03:53 --> ErrorException: Undefined variable $items
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 64.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:05:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:10:57 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:10:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:11:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:11:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 06:11:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Marketplace_views.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Marketplace_views.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace_views', [], true)
+ 3 APPPATH\Controllers\Marketplace\MarketplaceController.php(75): view('Marketplace_views', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->promotion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:11:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:11:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:11:13 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:13:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:13:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:14:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 06:14:01 --> ErrorException: Undefined variable $item
+in APPPATH\Views\Marketplace\Marketplace_views.php on line 65.
+ 1 APPPATH\Views\Marketplace\Marketplace_views.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci\\app\\Views\\Marketplace\\Marketplace_views.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Marketplace/Marketplace_views', [], true)
+ 5 APPPATH\Controllers\Marketplace\MarketplaceController.php(27): view('Marketplace/Marketplace_views')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:14:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:14:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:16:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:22:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:23:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:24:12 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:24:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:26:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:26:07 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 06:26:07 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:26:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 06:26:46 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:26:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:26:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:27:03 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:29:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 06:29:43 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:29:57 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 06:29:57 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 06:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:33:54 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:35:42 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 06:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 06:56:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 07:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:06:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 07:28:08 --> ParseError: syntax error, unexpected token "}"
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 07:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:28:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 07:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:29:17 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 07:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:29:18 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 07:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:32:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 07:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:32:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 07:32:01 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-08 07:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:32:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 07:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:33:48 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 07:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:33:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-07-08 07:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-08 07:34:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-07-08 07:34:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Marketplace\MarketplaceController::itemdetails(), 0 passed in C:\xampp\htdocs\ci\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Marketplace\MarketplaceController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Marketplace\MarketplaceController->itemdetails()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marketplace\MarketplaceController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
